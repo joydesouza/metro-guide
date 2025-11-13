@@ -5,45 +5,16 @@ import { describe, expect, it, beforeAll } from "vitest";
 import { JourneyPlannerPage } from "@/pages/JourneyPlanner";
 import { LocalMetroDataSource } from "@/services/data-sources/LocalMetroDataSource";
 import { JourneyRepositoryImpl } from "@/services/repositories/JourneyRepository";
-import { RoutePlanner } from "@/services/RoutePlanner";
-
-import type { JourneyRequest, JourneyResult } from "@/types/metro";
 
 const flushPromises = () => new Promise((resolve) => setTimeout(resolve, 0));
 
-class TestJourneyRepository extends JourneyRepositoryImpl {
-  private readonly planner: RoutePlanner;
-
-  constructor(planner: RoutePlanner) {
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-    super({ dataSource: new LocalMetroDataSource() });
-    this.planner = planner;
-  }
-
-  async planJourney(request: JourneyRequest): Promise<JourneyResult> {
-    const plan = this.planner.planJourney(
-      request.fromStationId,
-      request.toStationId
-    );
-    return {
-      status: "ok",
-      plan,
-    };
-  }
-}
-
-let repository: TestJourneyRepository;
+let repository: JourneyRepositoryImpl;
 
 describe("JourneyPlanner Page", () => {
   beforeAll(async () => {
-    const dataSource = new LocalMetroDataSource();
-    const [lines, stations] = await Promise.all([
-      dataSource.getLines(),
-      dataSource.getStations(),
-    ]);
-
-    const planner = new RoutePlanner({ lines, stations });
-    repository = new TestJourneyRepository(planner);
+    repository = new JourneyRepositoryImpl({
+      dataSource: new LocalMetroDataSource(),
+    });
   });
 
   it("guides a commuter through planning a journey between two stations", async () => {
@@ -65,9 +36,32 @@ describe("JourneyPlanner Page", () => {
     expect(submitButton).toBeDisabled();
 
     await act(async () => {
-      await user.selectOptions(fromInput, "central-silk-board");
-      await user.selectOptions(toInput, "sandal-soap-factory");
+      await user.click(fromInput);
     });
+    await act(async () => {
+      await user.type(fromInput, "Central");
+    });
+    await screen.findByRole("option", {
+      name: /central silk board/i,
+    });
+    await act(async () => {
+      await user.keyboard("{ArrowDown}{Enter}");
+    });
+    await waitFor(() => expect(fromInput).toHaveValue("Central Silk Board"));
+
+    await act(async () => {
+      await user.click(toInput);
+    });
+    await act(async () => {
+      await user.type(toInput, "Sandal");
+    });
+    await screen.findByRole("option", {
+      name: /sandal soap factory/i,
+    });
+    await act(async () => {
+      await user.keyboard("{ArrowDown}{Enter}");
+    });
+    await waitFor(() => expect(toInput).toHaveValue("Sandal Soap Factory"));
 
     await waitFor(() => expect(submitButton).toBeEnabled());
 
@@ -79,12 +73,12 @@ describe("JourneyPlanner Page", () => {
     await screen.findByRole("heading", { name: /journey steps/i });
 
     expect(
-      screen.getByRole("heading", { level: 3, name: /step 1: yellow line/i })
+      screen.getByRole("heading", { level: 3, name: /step 1: yellow line/i }),
     ).toBeInTheDocument();
     const interchangeItem = screen.getByRole("note");
     expect(interchangeItem).toHaveTextContent(/interchange at rv road/i);
     expect(
-      screen.getByRole("heading", { level: 3, name: /step 2: green line/i })
+      screen.getByRole("heading", { level: 3, name: /step 2: green line/i }),
     ).toBeInTheDocument();
     expect(screen.getByText(/have a great journey!/i)).toBeInTheDocument();
   });

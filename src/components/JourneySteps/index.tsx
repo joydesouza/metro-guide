@@ -1,18 +1,22 @@
-import { Fragment } from "react";
+import { Fragment, type CSSProperties } from "react";
 
 import type { JourneyPlan, StationSummary } from "@/types/metro";
+
+import "./JourneySteps.css";
 
 export interface JourneyStepsProps {
   plan: JourneyPlan;
   stations: StationSummary[];
 }
 
+const INTERCHANGE_COLOR_VAR = "--journey-steps-line-color";
+
 export function JourneySteps({
   plan,
   stations,
 }: JourneyStepsProps): JSX.Element {
   const stationLookup = new Map(
-    stations.map((station) => [station.id, station.name])
+    stations.map((station) => [station.id, station.name]),
   );
   const destinationSegment = plan.segments[plan.segments.length - 1];
   const destinationName =
@@ -33,8 +37,12 @@ export function JourneySteps({
             stationLookup.get(segment.startStationId) ?? segment.startStationId;
           const endName =
             stationLookup.get(segment.endStationId) ?? segment.endStationId;
-          const interchange = plan.interchanges[index];
-          const upcomingSegment = plan.segments[index + 1];
+          const interchange = segment.interchangeAfter;
+          const interchangeStyle: CSSProperties | undefined = interchange
+            ? {
+                [INTERCHANGE_COLOR_VAR]: interchange.toLineColorHex,
+              }
+            : undefined;
 
           return (
             <Fragment
@@ -51,14 +59,26 @@ export function JourneySteps({
                 </p>
               </li>
               {interchange ? (
-                <li className="journey-steps__interchange" role="note">
-                  <strong>Interchange at {interchange.stationName}.</strong>{" "}
-                  Switch to{" "}
-                  {upcomingSegment
-                    ? upcomingSegment.lineName
-                    : formatLineName(interchange.toLineId)}{" "}
-                  towards <strong>{interchange.nextTerminalStationName}</strong>
-                  .
+                <li
+                  className="journey-steps__interchange"
+                  role="note"
+                  style={interchangeStyle}
+                >
+                  <span className="journey-steps__interchange-kicker">
+                    Interchange
+                  </span>
+                  <p className="journey-steps__interchange-text">
+                    Interchange at <strong>{interchange.stationName}</strong>.
+                    Switch to{" "}
+                    <span className="journey-steps__interchange-line">
+                      {interchange.toLineName}
+                    </span>{" "}
+                    towards{" "}
+                    <strong className="journey-steps__interchange-direction">
+                      {interchange.nextTerminalStationName}
+                    </strong>
+                    .
+                  </p>
                 </li>
               ) : null}
             </Fragment>
@@ -70,10 +90,4 @@ export function JourneySteps({
       </ol>
     </section>
   );
-}
-
-function formatLineName(lineId: string): string {
-  return lineId
-    .replace(/-/g, " ")
-    .replace(/\b\w/g, (char) => char.toUpperCase());
 }

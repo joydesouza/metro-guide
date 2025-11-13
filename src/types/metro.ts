@@ -36,13 +36,18 @@ export interface RouteSegment {
   endStationId: string;
   terminalStationName: string;
   stopCount: number;
+  interchangeAfter?: InterchangeStep;
 }
 
 export interface InterchangeStep {
   stationId: string;
   stationName: string;
   fromLineId: string;
+  fromLineName: string;
+  fromLineColorHex: string;
   toLineId: string;
+  toLineName: string;
+  toLineColorHex: string;
   nextTerminalStationName: string;
 }
 

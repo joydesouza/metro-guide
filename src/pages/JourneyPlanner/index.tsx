@@ -38,6 +38,18 @@ export function JourneyPlannerPage({
     message: null,
   });
 
+  const searchStations = useCallback(
+    async (query: string) => {
+      try {
+        return await journeyRepository.listStations(query);
+      } catch (error) {
+        console.error("Failed to search stations:", error);
+        return [];
+      }
+    },
+    [journeyRepository],
+  );
+
   useEffect(() => {
     let isMounted = true;
 
@@ -100,7 +112,7 @@ export function JourneyPlannerPage({
         });
       }
     },
-    [journeyRepository]
+    [journeyRepository],
   );
 
   const errorMessage = useMemo(() => {
@@ -114,6 +126,7 @@ export function JourneyPlannerPage({
     <div className="journey-planner">
       <JourneyForm
         stations={stations}
+        onSearchStations={searchStations}
         isLoadingStations={isLoadingStations}
         isPlanningJourney={feedback.status === "planning"}
         onSubmit={handlePlanJourney}

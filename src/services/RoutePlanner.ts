@@ -27,7 +27,7 @@ export type RoutePlannerErrorCode =
 export class RoutePlannerError extends Error {
   constructor(
     message: string,
-    public readonly code: RoutePlannerErrorCode
+    public readonly code: RoutePlannerErrorCode,
   ) {
     super(message);
     this.name = "RoutePlannerError";
@@ -75,7 +75,7 @@ export class RoutePlanner {
     if (fromStationId === toStationId) {
       throw new RoutePlannerError(
         "Already at the destination station.",
-        "SAME_STATION"
+        "SAME_STATION",
       );
     }
 
@@ -83,7 +83,7 @@ export class RoutePlanner {
     if (!startStation) {
       throw new RoutePlannerError(
         `Station "${fromStationId}" not found in the metro network.`,
-        "INVALID_STATION"
+        "INVALID_STATION",
       );
     }
 
@@ -91,7 +91,7 @@ export class RoutePlanner {
     if (!destinationStation) {
       throw new RoutePlannerError(
         `Station "${toStationId}" not found in the metro network.`,
-        "INVALID_STATION"
+        "INVALID_STATION",
       );
     }
 
@@ -108,7 +108,7 @@ export class RoutePlanner {
     if (!result) {
       throw new RoutePlannerError(
         "No route found between the selected stations.",
-        "UNREACHABLE"
+        "UNREACHABLE",
       );
     }
 
@@ -119,7 +119,7 @@ export class RoutePlanner {
     if (journeyNodes.length === 0) {
       throw new RoutePlannerError(
         "No route found between the selected stations.",
-        "UNREACHABLE"
+        "UNREACHABLE",
       );
     }
 
@@ -135,13 +135,13 @@ export class RoutePlanner {
         graph[nodeId] ||= [];
 
         const connections = station.connections.filter(
-          (connection) => connection.lineId === lineId
+          (connection) => connection.lineId === lineId,
         );
 
         for (const connection of connections) {
           const targetNode = buildNodeId(
             connection.lineId,
-            connection.stationId
+            connection.stationId,
           );
           graph[nodeId].push({
             to: targetNode,
@@ -182,13 +182,13 @@ export class RoutePlanner {
   private attachVirtualNodes(
     graph: GraphAdjacency<EdgeMetadata>,
     startStation: Station,
-    destinationStation: Station
+    destinationStation: Station,
   ): void {
     graph[START_NODE] = startStation.lines.map<GraphEdge<EdgeMetadata>>(
       (lineId) => ({
         to: buildNodeId(lineId, startStation.id),
         metadata: { type: "virtual" },
-      })
+      }),
     );
 
     graph[GOAL_NODE] ||= [];
@@ -242,7 +242,7 @@ export class RoutePlanner {
       }
 
       interchanges.push(
-        this.createInterchangeStep(nodes, index, current, next)
+        this.createInterchangeStep(nodes, index, current, next),
       );
     }
 
@@ -252,7 +252,7 @@ export class RoutePlanner {
 
     const totalStops = segments.reduce(
       (sum, segment) => sum + segment.stopCount,
-      0
+      0,
     );
 
     return {
@@ -266,7 +266,7 @@ export class RoutePlanner {
   private extendSegment(
     segment: SegmentAccumulator | null,
     current: StationOnLine,
-    next: StationOnLine
+    next: StationOnLine,
   ): SegmentAccumulator {
     if (!segment) {
       return {
@@ -291,7 +291,7 @@ export class RoutePlanner {
     const terminalStationName = this.resolveTerminal(
       line,
       segment.startStationId,
-      segment.endStationId
+      segment.endStationId,
     );
 
     return {
@@ -309,20 +309,26 @@ export class RoutePlanner {
     nodes: StationOnLine[],
     index: number,
     current: StationOnLine,
-    next: StationOnLine
+    next: StationOnLine,
   ): InterchangeStep {
     const station = this.requireStation(current.stationId);
+    const fromLine = this.requireLine(current.lineId);
+    const toLine = this.requireLine(next.lineId);
     const nextTerminal = this.resolveTerminalForUpcomingSegment(
       nodes,
       index,
-      next
+      next,
     );
 
     return {
       stationId: station.id,
       stationName: station.name,
       fromLineId: current.lineId,
+      fromLineName: fromLine.name,
+      fromLineColorHex: fromLine.colorHex,
       toLineId: next.lineId,
+      toLineName: toLine.name,
+      toLineColorHex: toLine.colorHex,
       nextTerminalStationName: nextTerminal,
     };
   }
@@ -330,7 +336,7 @@ export class RoutePlanner {
   private resolveTerminalForUpcomingSegment(
     nodes: StationOnLine[],
     index: number,
-    next: StationOnLine
+    next: StationOnLine,
   ): string {
     const line = this.requireLine(next.lineId);
 
@@ -352,7 +358,7 @@ export class RoutePlanner {
   private resolveTerminal(
     line: Line,
     fromStationId: string,
-    toStationId: string
+    toStationId: string,
   ): string {
     const stationPositions = this.lineStationOrder.get(line.id);
 
@@ -382,7 +388,7 @@ export class RoutePlanner {
     if (!line) {
       throw new RoutePlannerError(
         `Line "${lineId}" not found in the network.`,
-        "INVALID_STATION"
+        "INVALID_STATION",
       );
     }
     return line;
@@ -393,14 +399,14 @@ export class RoutePlanner {
     if (!station) {
       throw new RoutePlannerError(
         `Station "${stationId}" not found in the network.`,
-        "INVALID_STATION"
+        "INVALID_STATION",
       );
     }
     return station;
   }
 
   private computeLineStationOrder(
-    lines: Line[]
+    lines: Line[],
   ): Map<string, Map<string, number>> {
     const map = new Map<string, Map<string, number>>();
 

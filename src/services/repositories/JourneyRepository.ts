@@ -4,13 +4,14 @@ import type { MetroDataSource } from "@/services/data-sources/LocalMetroDataSour
 import type {
   JourneyRequest,
   JourneyResult,
+  JourneyPlan,
   LineSummary,
   StationSummary,
 } from "@/types/metro";
 
 export interface JourneyRepository {
   planJourney(request: JourneyRequest): Promise<JourneyResult>;
-  listStations(): Promise<StationSummary[]>;
+  listStations(prefix?: string): Promise<StationSummary[]>;
   listLines(): Promise<LineSummary[]>;
 }
 
@@ -40,7 +41,8 @@ export class JourneyRepositoryImpl implements JourneyRepository {
     try {
       const planner = await this.ensurePlanner();
       const plan = planner.planJourney(fromStationId, toStationId);
-      return { status: "ok", plan };
+      const enrichedPlan = this.decoratePlanWithInterchanges(plan);
+      return { status: "ok", plan: enrichedPlan };
     } catch (error) {
       if (error instanceof RoutePlannerError) {
         if (error.code === "SAME_STATION") {
@@ -69,15 +71,44 @@ export class JourneyRepositoryImpl implements JourneyRepository {
     }
   }
 
-  async listStations(): Promise<StationSummary[]> {
+  async listStations(prefix?: string): Promise<StationSummary[]> {
     const stations = await this.dataSource.getStations();
 
-    return stations.map((station) => ({
-      id: station.id,
-      name: station.name,
-      lineIds: station.lines,
-      isInterchange: station.isInterchange,
-    }));
+    const summaries = stations
+      .map((station) => ({
+        id: station.id,
+        name: station.name,
+        lineIds: station.lines,
+        isInterchange: station.isInterchange,
+      }))
+      .sort((a, b) => a.name.localeCompare(b.name));
+
+    if (!prefix) {
+      return summaries;
+    }
+
+    const normalized = prefix.trim().toLowerCase();
+    if (normalized.length === 0) {
+      return summaries;
+    }
+
+    const startsWith: StationSummary[] = [];
+    const contains: StationSummary[] = [];
+
+    for (const station of summaries) {
+      const name = station.name.toLowerCase();
+      if (name.startsWith(normalized)) {
+        startsWith.push(station);
+      } else if (name.includes(normalized)) {
+        contains.push(station);
+      }
+    }
+
+    if (startsWith.length === 0 && contains.length === 0) {
+      return summaries;
+    }
+
+    return [...startsWith, ...contains];
   }
 
   async listLines(): Promise<LineSummary[]> {
@@ -101,5 +132,27 @@ export class JourneyRepositoryImpl implements JourneyRepository {
       this.planner = new RoutePlanner({ lines, stations });
     }
     return this.planner;
+  }
+
+  private decoratePlanWithInterchanges(plan: JourneyPlan): JourneyPlan {
+    if (plan.interchanges.length === 0) {
+      return plan;
+    }
+
+    const segments = plan.segments.map((segment, index) => {
+      const interchange = plan.interchanges[index];
+      if (!interchange) {
+        return segment;
+      }
+      return {
+        ...segment,
+        interchangeAfter: interchange,
+      };
+    });
+
+    return {
+      ...plan,
+      segments,
+    };
   }
 }

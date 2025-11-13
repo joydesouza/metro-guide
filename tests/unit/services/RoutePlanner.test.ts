@@ -19,7 +19,7 @@ describe("RoutePlanner", () => {
   it("computes the lexicographically optimal journey with an interchange", () => {
     const plan = planner.planJourney(
       "central-silk-board",
-      "sandal-soap-factory"
+      "sandal-soap-factory",
     );
 
     expect(plan.totalInterchanges).toBe(1);
@@ -65,13 +65,13 @@ describe("RoutePlanner", () => {
 
   it("throws for identical start and end stations", () => {
     expect(() => planner.planJourney("rv-road", "rv-road")).toThrow(
-      /already at the destination/i
+      /already at the destination/i,
     );
   });
 
   it("throws when a station id is unknown", () => {
     expect(() => planner.planJourney("unknown-station", "rv-road")).toThrow(
-      /not found/i
+      /not found/i,
     );
   });
 });

@@ -38,7 +38,7 @@ export function createWeight(primary = 0, secondary = 0): LexicographicWeight {
 
 export function addWeights(
   a: LexicographicWeight,
-  b: LexicographicWeight
+  b: LexicographicWeight,
 ): LexicographicWeight {
   return {
     primary: a.primary + b.primary,
@@ -48,7 +48,7 @@ export function addWeights(
 
 export function compareWeights(
   a: LexicographicWeight,
-  b: LexicographicWeight
+  b: LexicographicWeight,
 ): number {
   if (a.primary < b.primary) return -1;
   if (a.primary > b.primary) return 1;
@@ -150,7 +150,7 @@ interface QueueNode {
 }
 
 export function dijkstraLexicographic<TMeta = unknown>(
-  options: DijkstraLexicographicOptions<TMeta>
+  options: DijkstraLexicographicOptions<TMeta>,
 ): DijkstraPath | null {
   const { graph, start, goal, edgeWeight, maxIterations } = options;
 
@@ -159,7 +159,7 @@ export function dijkstraLexicographic<TMeta = unknown>(
   const visited = new Set<string>();
 
   const queue = new PriorityQueue<QueueNode>((a, b) =>
-    compareWeights(a.weight, b.weight)
+    compareWeights(a.weight, b.weight),
   );
 
   dist.set(start, createWeight());
@@ -213,7 +213,7 @@ export function dijkstraLexicographic<TMeta = unknown>(
 
 function reconstructPath(
   previous: Map<string, string | null>,
-  goal: string
+  goal: string,
 ): string[] {
   const path: string[] = [];
   let current: string | null | undefined = goal;
