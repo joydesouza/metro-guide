@@ -42,9 +42,11 @@
   padding: var(--spacing-12) var(--spacing-16);
   border-radius: var(--spacing-16);
   border-left: var(--spacing-4) solid var(--journey-steps-line-color);
-  background: linear-gradient(135deg,
-      rgba(28, 126, 214, 0.12),
-      rgba(28, 126, 214, 0.05));
+  background: linear-gradient(
+    135deg,
+    rgba(28, 126, 214, 0.12),
+    rgba(28, 126, 214, 0.05)
+  );
   color: #1a1c1e;
   display: flex;
   flex-direction: column;

@@ -67,10 +67,12 @@ body {
   height: auto;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  background: radial-gradient(circle at top,
-      #f0f4ff 0%,
-      #f5f7fb 50%,
-      #ffffff 100%);
+  background: radial-gradient(
+    circle at top,
+    #f0f4ff 0%,
+    #f5f7fb 50%,
+    #ffffff 100%
+  );
 }
 
 a {

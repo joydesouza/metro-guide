@@ -16,7 +16,7 @@ export function JourneySteps({
   stations,
 }: JourneyStepsProps): JSX.Element {
   const stationLookup = new Map(
-    stations.map((station) => [station.id, station.name])
+    stations.map((station) => [station.id, station.name]),
   );
   const destinationSegment = plan.segments[plan.segments.length - 1];
   const destinationName =

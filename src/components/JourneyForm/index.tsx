@@ -332,7 +332,7 @@ function handleComboboxKeyDown(
   controller: Pick<
     StationSearchController,
     "highlightNext" | "highlightPrevious" | "selectHighlighted" | "close"
-  >
+  >,
 ): void {
   if (event.key === "ArrowDown") {
     event.preventDefault();
