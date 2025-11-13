@@ -39,6 +39,28 @@
 
 .journey-steps__segment-title {
   margin: 0 0 var(--spacing-8);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-8);
+  line-height: 1;
+  padding: 0;
+  font-size: 18px;
+}
+
+.journey-steps__segment-title-text {
+  line-height: initial;
+  padding: 0;
+  margin: 0;
+}
+
+.journey-steps__line-indicator {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .journey-steps__interchange {

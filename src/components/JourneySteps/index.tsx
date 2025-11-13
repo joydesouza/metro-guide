@@ -16,7 +16,7 @@ export function JourneySteps({
   stations,
 }: JourneyStepsProps): JSX.Element {
   const stationLookup = new Map(
-    stations.map((station) => [station.id, station.name]),
+    stations.map((station) => [station.id, station.name])
   );
   const destinationSegment = plan.segments[plan.segments.length - 1];
   const destinationName =
@@ -26,7 +26,7 @@ export function JourneySteps({
   return (
     <section className="journey-steps card" aria-live="polite">
       <header className="journey-steps__header">
-        <h2 className="m-10">Journey Steps</h2>
+        <h2>Journey Steps</h2>
         <p>
           {plan.totalStops} stops • {plan.totalInterchanges} interchanges
         </p>
@@ -50,7 +50,14 @@ export function JourneySteps({
             >
               <li className="journey-steps__segment">
                 <h3 className="journey-steps__segment-title">
-                  Step {index + 1}: {segment.lineName}
+                  <span
+                    className="journey-steps__line-indicator"
+                    style={{ backgroundColor: segment.colorHex }}
+                    aria-hidden="true"
+                  />
+                  <span className="journey-steps__segment-title-text">
+                    Step {index + 1}: {segment.lineName}
+                  </span>
                 </h3>
                 <p>
                   Travel towards <strong>{segment.terminalStationName}</strong>{" "}
