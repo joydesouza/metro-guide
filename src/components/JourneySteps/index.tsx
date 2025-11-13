@@ -95,7 +95,21 @@ export function JourneySteps({
           );
         })}
         <li className="journey-steps__arrival">
-          Arrive at <strong>{destinationName}</strong>. Have a great journey!
+          <div className="journey-steps__arrival-content">
+            <div className="journey-steps__arrival-icon">✓</div>
+            <div className="journey-steps__arrival-text">
+              <span className="journey-steps__arrival-label">
+                You've arrived!
+              </span>
+              <span className="journey-steps__arrival-destination">
+                {destinationName}
+              </span>
+              <span className="journey-steps__arrival-message">
+                Have a great journey!
+              </span>
+            </div>
+          </div>
+          <div className="journey-steps__arrival-shine"></div>
         </li>
       </ol>
     </section>
