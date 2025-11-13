@@ -1,0 +1,204 @@
+{
+  "version": "2025-11-13",
+  "lines": [
+    {
+      "id": "yellow",
+      "name": "Yellow Line",
+      "colorHex": "#f4c20d",
+      "terminalStart": "central-silk-board",
+      "terminalEnd": "rv-road",
+      "stations": [
+        { "id": "central-silk-board", "name": "Central Silk Board" },
+        { "id": "bommanahalli", "name": "Bommanahalli" },
+        { "id": "hongsandra", "name": "Hongsandra" },
+        { "id": "jayadeva-hospital", "name": "Jayadeva Hospital" },
+        { "id": "rv-road", "name": "RV Road" }
+      ]
+    },
+    {
+      "id": "green",
+      "name": "Green Line",
+      "colorHex": "#2f9e44",
+      "terminalStart": "silk-institute",
+      "terminalEnd": "madavara",
+      "stations": [
+        { "id": "silk-institute", "name": "Silk Institute" },
+        { "id": "jayanagar", "name": "Jayanagar" },
+        { "id": "rv-road", "name": "RV Road" },
+        { "id": "lalbagh", "name": "Lalbagh" },
+        { "id": "majestic", "name": "Nadaprabhu Kempegowda (Majestic)" },
+        { "id": "mantri-square", "name": "Mantri Square Sampige Road" },
+        { "id": "sandal-soap-factory", "name": "Sandal Soap Factory" },
+        { "id": "madavara", "name": "Madavara" }
+      ]
+    }
+  ],
+  "stations": [
+    {
+      "id": "central-silk-board",
+      "name": "Central Silk Board",
+      "lines": ["yellow"],
+      "isInterchange": false,
+      "connections": [
+        {
+          "lineId": "yellow",
+          "stationId": "bommanahalli",
+          "direction": "forward"
+        }
+      ]
+    },
+    {
+      "id": "bommanahalli",
+      "name": "Bommanahalli",
+      "lines": ["yellow"],
+      "isInterchange": false,
+      "connections": [
+        {
+          "lineId": "yellow",
+          "stationId": "central-silk-board",
+          "direction": "backward"
+        },
+        {
+          "lineId": "yellow",
+          "stationId": "hongsandra",
+          "direction": "forward"
+        }
+      ]
+    },
+    {
+      "id": "hongsandra",
+      "name": "Hongsandra",
+      "lines": ["yellow"],
+      "isInterchange": false,
+      "connections": [
+        {
+          "lineId": "yellow",
+          "stationId": "bommanahalli",
+          "direction": "backward"
+        },
+        {
+          "lineId": "yellow",
+          "stationId": "jayadeva-hospital",
+          "direction": "forward"
+        }
+      ]
+    },
+    {
+      "id": "jayadeva-hospital",
+      "name": "Jayadeva Hospital",
+      "lines": ["yellow"],
+      "isInterchange": false,
+      "connections": [
+        {
+          "lineId": "yellow",
+          "stationId": "hongsandra",
+          "direction": "backward"
+        },
+        { "lineId": "yellow", "stationId": "rv-road", "direction": "forward" }
+      ]
+    },
+    {
+      "id": "rv-road",
+      "name": "RV Road",
+      "lines": ["yellow", "green"],
+      "isInterchange": true,
+      "connections": [
+        {
+          "lineId": "yellow",
+          "stationId": "jayadeva-hospital",
+          "direction": "backward"
+        },
+        { "lineId": "green", "stationId": "lalbagh", "direction": "forward" },
+        { "lineId": "green", "stationId": "jayanagar", "direction": "backward" }
+      ]
+    },
+    {
+      "id": "silk-institute",
+      "name": "Silk Institute",
+      "lines": ["green"],
+      "isInterchange": false,
+      "connections": [
+        { "lineId": "green", "stationId": "jayanagar", "direction": "forward" }
+      ]
+    },
+    {
+      "id": "jayanagar",
+      "name": "Jayanagar",
+      "lines": ["green"],
+      "isInterchange": false,
+      "connections": [
+        {
+          "lineId": "green",
+          "stationId": "silk-institute",
+          "direction": "backward"
+        },
+        { "lineId": "green", "stationId": "rv-road", "direction": "forward" }
+      ]
+    },
+    {
+      "id": "lalbagh",
+      "name": "Lalbagh",
+      "lines": ["green"],
+      "isInterchange": false,
+      "connections": [
+        { "lineId": "green", "stationId": "rv-road", "direction": "backward" },
+        { "lineId": "green", "stationId": "majestic", "direction": "forward" }
+      ]
+    },
+    {
+      "id": "majestic",
+      "name": "Nadaprabhu Kempegowda (Majestic)",
+      "lines": ["green"],
+      "isInterchange": false,
+      "connections": [
+        { "lineId": "green", "stationId": "lalbagh", "direction": "backward" },
+        {
+          "lineId": "green",
+          "stationId": "mantri-square",
+          "direction": "forward"
+        }
+      ]
+    },
+    {
+      "id": "mantri-square",
+      "name": "Mantri Square Sampige Road",
+      "lines": ["green"],
+      "isInterchange": false,
+      "connections": [
+        { "lineId": "green", "stationId": "majestic", "direction": "backward" },
+        {
+          "lineId": "green",
+          "stationId": "sandal-soap-factory",
+          "direction": "forward"
+        }
+      ]
+    },
+    {
+      "id": "sandal-soap-factory",
+      "name": "Sandal Soap Factory",
+      "lines": ["green"],
+      "isInterchange": false,
+      "connections": [
+        {
+          "lineId": "green",
+          "stationId": "mantri-square",
+          "direction": "backward"
+        },
+        { "lineId": "green", "stationId": "madavara", "direction": "forward" }
+      ]
+    },
+    {
+      "id": "madavara",
+      "name": "Madavara",
+      "lines": ["green"],
+      "isInterchange": false,
+      "connections": [
+        {
+          "lineId": "green",
+          "stationId": "sandal-soap-factory",
+          "direction": "backward"
+        }
+      ]
+    }
+  ]
+}
