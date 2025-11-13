@@ -26,4 +26,3 @@ npm run typecheck
 ## Deployment
 
 This project is automatically deployed to GitHub Pages when changes are merged to the `main` branch. See [the deployment workflow](.github/workflows/deploy-pages.yml) for details.
-

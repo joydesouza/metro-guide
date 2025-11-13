@@ -213,4 +213,3 @@ When updating the deployment workflow:
 2. Verify workflow syntax: `Actions → [Workflow] → [Run] → View workflow file`
 3. Test manual dispatch before merging to `main`
 4. Monitor first automated deployment after changes
-

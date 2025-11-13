@@ -114,4 +114,3 @@ describe("JourneyRepository operational status handling", () => {
     }
   });
 });
-
