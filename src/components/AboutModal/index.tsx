@@ -34,10 +34,33 @@ export function AboutModal({ isOpen, onClose }: AboutModalProps): JSX.Element {
     return <></>;
   }
 
+  const handleOverlayKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      onClose();
+    }
+  };
+
   return (
     <>
-      <div className="about-modal__overlay" onClick={onClose}>
-        <div className="about-modal" onClick={(e) => e.stopPropagation()}>
+      <div
+        className="about-modal__overlay"
+        onClick={onClose}
+        onKeyDown={handleOverlayKeyDown}
+        role="button"
+        tabIndex={0}
+        aria-label="Close modal"
+      >
+        {/* eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions, jsx-a11y/click-events-have-key-events */}
+        <div
+          className="about-modal"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="about-modal-title"
+          onClick={(e) => {
+            e.stopPropagation();
+          }}
+        >
           <button
             className="about-modal__close"
             onClick={onClose}
@@ -47,7 +70,9 @@ export function AboutModal({ isOpen, onClose }: AboutModalProps): JSX.Element {
             <span className="about-modal__close-icon">×</span>
           </button>
           <div className="about-modal__content">
-            <h2 className="about-modal__title">Why I Built This</h2>
+            <h2 id="about-modal-title" className="about-modal__title">
+              Why I Built This
+            </h2>
             <p className="about-modal__text">
               Maga this Bangalore Metro keeps getting bigger and more confusing
               with every new line they add. Half the time I’m standing on the

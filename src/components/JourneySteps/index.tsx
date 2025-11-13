@@ -99,7 +99,7 @@ export function JourneySteps({
             <div className="journey-steps__arrival-icon">✓</div>
             <div className="journey-steps__arrival-text">
               <span className="journey-steps__arrival-label">
-                You've arrived!
+                You&apos;ve arrived!
               </span>
               <span className="journey-steps__arrival-destination">
                 {destinationName}

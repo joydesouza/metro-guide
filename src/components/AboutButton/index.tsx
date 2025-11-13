@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import { AboutModal } from "../AboutModal";
 import "./AboutButton.css";
 
@@ -20,4 +21,3 @@ export function AboutButton(): JSX.Element {
     </>
   );
 }
-
