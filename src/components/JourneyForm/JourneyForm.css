@@ -1,0 +1,140 @@
+.journey-form {
+  display: grid;
+  gap: var(--spacing-16);
+}
+
+.journey-form__fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--spacing-16);
+}
+
+.journey-form__legend {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-8);
+}
+
+.journey-form__label {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-8);
+  font-weight: 600;
+}
+
+.journey-form__combobox {
+  position: relative;
+}
+
+.journey-form__input {
+  width: 100%;
+  padding: var(--spacing-12) var(--spacing-16);
+  border-radius: var(--spacing-16);
+  border: 1px solid rgba(26, 28, 30, 0.18);
+  background-color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.4;
+  transition:
+    border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+}
+
+.journey-form__input:focus-visible {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.25);
+}
+
+.journey-form__options {
+  position: absolute;
+  z-index: 8;
+  top: calc(100% + var(--spacing-4));
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: var(--spacing-8) 0;
+  list-style: none;
+  background-color: #ffffff;
+  border-radius: var(--spacing-16);
+  box-shadow: 0 18px 32px rgba(15, 23, 42, 0.18);
+  max-height: 16rem;
+  overflow-y: auto;
+}
+
+.journey-form__option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-12);
+  padding: var(--spacing-10) var(--spacing-16);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.journey-form__option--highlighted {
+  background: linear-gradient(
+    135deg,
+    rgba(37, 99, 235, 0.16),
+    rgba(37, 99, 235, 0.08)
+  );
+}
+
+.journey-form__option--status {
+  color: rgba(26, 28, 30, 0.6);
+  cursor: default;
+  font-weight: 400;
+  justify-content: flex-start;
+}
+
+.journey-form__option-name {
+  flex: 1;
+}
+
+.journey-form__option-tag {
+  padding: var(--spacing-4) var(--spacing-8);
+  border-radius: var(--spacing-12);
+  background-color: rgba(16, 185, 129, 0.15);
+  color: #0f766e;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.journey-form__submit {
+  align-self: flex-start;
+  padding: var(--spacing-12) var(--spacing-20);
+  border-radius: var(--spacing-16);
+  border: none;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.journey-form__submit:disabled {
+  cursor: not-allowed;
+  background: rgba(37, 99, 235, 0.45);
+  box-shadow: none;
+  transform: none;
+}
+
+.journey-form__submit:not(:disabled):hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(37, 99, 235, 0.3);
+}
+
+.journey-form__error {
+  margin: 0;
+  padding: var(--spacing-10) var(--spacing-16);
+  border-radius: var(--spacing-12);
+  background-color: rgba(220, 38, 38, 0.15);
+  color: #991b1b;
+  font-weight: 500;
+}

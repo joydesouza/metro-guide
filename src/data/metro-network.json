@@ -1,0 +1,2877 @@
+{
+  "version": "2025-11-13",
+  "lines": [
+    {
+      "id": "purple",
+      "name": "Purple Line",
+      "colorHex": "#6f2da8",
+      "isOperational": true,
+      "terminalStart": "challaghatta",
+      "terminalEnd": "whitefield-kadugodi",
+      "stations": [
+        {
+          "id": "challaghatta",
+          "name": "Challaghatta"
+        },
+        {
+          "id": "kengeri-bus-terminal",
+          "name": "Kengeri Bus Terminal"
+        },
+        {
+          "id": "kengeri",
+          "name": "Kengeri"
+        },
+        {
+          "id": "pattanagere",
+          "name": "Pattanagere"
+        },
+        {
+          "id": "rajarajeshwari-nagar",
+          "name": "Rajarajeshwari Nagar"
+        },
+        {
+          "id": "jnanabharathi",
+          "name": "Jnanabharathi"
+        },
+        {
+          "id": "nayandahalli",
+          "name": "Nayandahalli"
+        },
+        {
+          "id": "mysuru-road",
+          "name": "Mysuru Road"
+        },
+        {
+          "id": "deepanjali-nagar",
+          "name": "Deepanjali Nagar"
+        },
+        {
+          "id": "attiguppe",
+          "name": "Attiguppe"
+        },
+        {
+          "id": "vijayanagar",
+          "name": "Vijayanagar"
+        },
+        {
+          "id": "magadi-road",
+          "name": "Magadi Road"
+        },
+        {
+          "id": "hosahalli",
+          "name": "Hosahalli"
+        },
+        {
+          "id": "ksr-city-railway-stn",
+          "name": "KSR City Railway Stn."
+        },
+        {
+          "id": "kempegowda-stn-majestic",
+          "name": "Kempegowda Stn., Majestic"
+        },
+        {
+          "id": "central-college",
+          "name": "Central College"
+        },
+        {
+          "id": "vidhana-soudha",
+          "name": "Vidhana Soudha"
+        },
+        {
+          "id": "cubbon-park",
+          "name": "Cubbon Park"
+        },
+        {
+          "id": "mahatma-gandhi-road",
+          "name": "Mahatma Gandhi Road"
+        },
+        {
+          "id": "trinity",
+          "name": "Trinity"
+        },
+        {
+          "id": "halasuru",
+          "name": "Halasuru"
+        },
+        {
+          "id": "indiranagar",
+          "name": "Indiranagar"
+        },
+        {
+          "id": "swami-vivekananda-road",
+          "name": "Swami Vivekananda Road"
+        },
+        {
+          "id": "baiyappanahalli",
+          "name": "Baiyappanahalli"
+        },
+        {
+          "id": "benniganahalli",
+          "name": "Benniganahalli"
+        },
+        {
+          "id": "kr-pura",
+          "name": "KR Pura"
+        },
+        {
+          "id": "mahadevapura",
+          "name": "Mahadevapura"
+        },
+        {
+          "id": "garudacharpalya",
+          "name": "Garudacharpalya"
+        },
+        {
+          "id": "singayyanapalya",
+          "name": "Singayyanapalya"
+        },
+        {
+          "id": "hoodi",
+          "name": "Hoodi"
+        },
+        {
+          "id": "seetharam-palya",
+          "name": "Seetharam Palya"
+        },
+        {
+          "id": "kundalahalli",
+          "name": "Kundalahalli"
+        },
+        {
+          "id": "nallurhalli",
+          "name": "Nallurhalli"
+        },
+        {
+          "id": "sri-sathya-sai-hospital",
+          "name": "Sri Sathya Sai Hospital"
+        },
+        {
+          "id": "pattandur-agrahara",
+          "name": "Pattandur Agrahara"
+        },
+        {
+          "id": "kadugodi-tree-park",
+          "name": "Kadugodi Tree Park"
+        },
+        {
+          "id": "channasandra-hopefarm",
+          "name": "Channasandra (Hopefarm)"
+        },
+        {
+          "id": "whitefield-kadugodi",
+          "name": "Whitefield (Kadugodi)"
+        }
+      ]
+    },
+    {
+      "id": "green",
+      "name": "Green Line",
+      "colorHex": "#2f9e44",
+      "isOperational": true,
+      "terminalStart": "madavara",
+      "terminalEnd": "silk-institute",
+      "stations": [
+        {
+          "id": "madavara",
+          "name": "Madavara"
+        },
+        {
+          "id": "chikkabidarakallu",
+          "name": "Chikkabidarakallu"
+        },
+        {
+          "id": "manjunathanagar",
+          "name": "Manjunathanagar"
+        },
+        {
+          "id": "nagasandra",
+          "name": "Nagasandra"
+        },
+        {
+          "id": "dasarahalli",
+          "name": "Dasarahalli"
+        },
+        {
+          "id": "jalahalli",
+          "name": "Jalahalli"
+        },
+        {
+          "id": "peenya-industry",
+          "name": "Peenya Industry"
+        },
+        {
+          "id": "peenya",
+          "name": "Peenya"
+        },
+        {
+          "id": "goraguntepalya",
+          "name": "Goraguntepalya"
+        },
+        {
+          "id": "yeshwantpur",
+          "name": "Yeshwantpur"
+        },
+        {
+          "id": "sandal-soap-factory",
+          "name": "Sandal Soap Factory"
+        },
+        {
+          "id": "mahalakshmi",
+          "name": "Mahalakshmi"
+        },
+        {
+          "id": "rajajinagar",
+          "name": "Rajajinagar"
+        },
+        {
+          "id": "kuvempu-road",
+          "name": "Kuvempu Road"
+        },
+        {
+          "id": "srirampura",
+          "name": "Srirampura"
+        },
+        {
+          "id": "sampige-road",
+          "name": "Sampige Road"
+        },
+        {
+          "id": "kempegowda-stn-majestic",
+          "name": "Kempegowda Stn., Majestic"
+        },
+        {
+          "id": "chickpete",
+          "name": "Chickpete"
+        },
+        {
+          "id": "krishna-rajendra-market",
+          "name": "Krishna Rajendra Market"
+        },
+        {
+          "id": "national-college",
+          "name": "National College"
+        },
+        {
+          "id": "lalbagh",
+          "name": "Lalbagh"
+        },
+        {
+          "id": "south-end-circle",
+          "name": "South End Circle"
+        },
+        {
+          "id": "jayanagar",
+          "name": "Jayanagar"
+        },
+        {
+          "id": "rashtreeya-vidyalaya-road",
+          "name": "Rashtreeya Vidyalaya Road"
+        },
+        {
+          "id": "banashankari",
+          "name": "Banashankari"
+        },
+        {
+          "id": "jayaprakash-nagar",
+          "name": "Jayaprakash Nagar"
+        },
+        {
+          "id": "yelachenahalli",
+          "name": "Yelachenahalli"
+        },
+        {
+          "id": "konanakunte-cross",
+          "name": "Konanakunte Cross"
+        },
+        {
+          "id": "doddakallasandra",
+          "name": "Doddakallasandra"
+        },
+        {
+          "id": "vajarahalli",
+          "name": "Vajarahalli"
+        },
+        {
+          "id": "thalaghattapura",
+          "name": "Thalaghattapura"
+        },
+        {
+          "id": "silk-institute",
+          "name": "Silk Institute"
+        }
+      ]
+    },
+    {
+      "id": "yellow",
+      "name": "Yellow Line",
+      "colorHex": "#f4c20d",
+      "isOperational": true,
+      "terminalStart": "rashtreeya-vidyalaya-road",
+      "terminalEnd": "bommasandra",
+      "stations": [
+        {
+          "id": "rashtreeya-vidyalaya-road",
+          "name": "Rashtreeya Vidyalaya Road"
+        },
+        {
+          "id": "ragigudda",
+          "name": "Ragigudda"
+        },
+        {
+          "id": "jayadeva-hospital",
+          "name": "Jayadeva Hospital"
+        },
+        {
+          "id": "btm-layout",
+          "name": "BTM Layout"
+        },
+        {
+          "id": "central-silk-board",
+          "name": "Central Silk Board"
+        },
+        {
+          "id": "bommanahalli",
+          "name": "Bommanahalli"
+        },
+        {
+          "id": "hongasandra",
+          "name": "Hongasandra"
+        },
+        {
+          "id": "kudlu-gate",
+          "name": "Kudlu Gate"
+        },
+        {
+          "id": "singasandra",
+          "name": "Singasandra"
+        },
+        {
+          "id": "hosa-road",
+          "name": "Hosa Road"
+        },
+        {
+          "id": "beratena-agrahara",
+          "name": "Beratena Agrahara"
+        },
+        {
+          "id": "electronic-city",
+          "name": "Electronic City"
+        },
+        {
+          "id": "konnapana-agrahara",
+          "name": "Konnapana Agrahara"
+        },
+        {
+          "id": "huskur-road",
+          "name": "Huskur Road"
+        },
+        {
+          "id": "hebbagodi",
+          "name": "Hebbagodi"
+        },
+        {
+          "id": "bommasandra",
+          "name": "Bommasandra"
+        }
+      ]
+    },
+    {
+      "id": "blue",
+      "name": "Blue Line",
+      "colorHex": "#1971c2",
+      "isOperational": false,
+      "terminalStart": "central-silk-board",
+      "terminalEnd": "kempegowda-international-airport",
+      "stations": [
+        {
+          "id": "central-silk-board",
+          "name": "Central Silk Board"
+        },
+        {
+          "id": "hsr-layout",
+          "name": "HSR Layout"
+        },
+        {
+          "id": "agara-lake",
+          "name": "Agara Lake"
+        },
+        {
+          "id": "iblur",
+          "name": "Iblur"
+        },
+        {
+          "id": "bellandur",
+          "name": "Bellandur"
+        },
+        {
+          "id": "devarabeesanahalli",
+          "name": "Devarabeesanahalli"
+        },
+        {
+          "id": "kadubeesanahalli",
+          "name": "Kadubeesanahalli"
+        },
+        {
+          "id": "marathahalli",
+          "name": "Marathahalli"
+        },
+        {
+          "id": "isro-karthik-nagar",
+          "name": "ISRO (Karthik Nagar)"
+        },
+        {
+          "id": "doddanekundi",
+          "name": "Doddanekundi"
+        },
+        {
+          "id": "drdo-sports-complex",
+          "name": "DRDO Sports Complex"
+        },
+        {
+          "id": "mahadevapura",
+          "name": "Mahadevapura"
+        },
+        {
+          "id": "kr-pura",
+          "name": "KR Pura"
+        },
+        {
+          "id": "kasturinagar",
+          "name": "Kasturinagar"
+        },
+        {
+          "id": "horamavu",
+          "name": "Horamavu"
+        },
+        {
+          "id": "hrbr-layout",
+          "name": "HRBR Layout"
+        },
+        {
+          "id": "kalyan-nagar",
+          "name": "Kalyan Nagar"
+        },
+        {
+          "id": "hbr-layout",
+          "name": "HBR Layout"
+        },
+        {
+          "id": "nagawara",
+          "name": "Nagawara"
+        },
+        {
+          "id": "veerannapalya",
+          "name": "Veerannapalya"
+        },
+        {
+          "id": "kempapura",
+          "name": "Kempapura"
+        },
+        {
+          "id": "hebbal",
+          "name": "Hebbal"
+        },
+        {
+          "id": "kodigehalli",
+          "name": "Kodigehalli"
+        },
+        {
+          "id": "jakkur-cross",
+          "name": "Jakkur Cross"
+        },
+        {
+          "id": "yelahanka",
+          "name": "Yelahanka"
+        },
+        {
+          "id": "bettahalasuru",
+          "name": "Bettahalasuru"
+        },
+        {
+          "id": "bagalur-cross",
+          "name": "Bagalur Cross"
+        },
+        {
+          "id": "doddajala",
+          "name": "Doddajala"
+        },
+        {
+          "id": "airport-city",
+          "name": "Airport City"
+        },
+        {
+          "id": "kempegowda-international-airport",
+          "name": "Kempegowda International Airport"
+        }
+      ]
+    },
+    {
+      "id": "pink",
+      "name": "Pink Line",
+      "colorHex": "#e64980",
+      "isOperational": false,
+      "terminalStart": "kalena-agrahara",
+      "terminalEnd": "nagawara",
+      "stations": [
+        {
+          "id": "kalena-agrahara",
+          "name": "Kalena Agrahara"
+        },
+        {
+          "id": "hulimavu",
+          "name": "Hulimavu"
+        },
+        {
+          "id": "iim-bangalore",
+          "name": "IIM Bangalore"
+        },
+        {
+          "id": "jp-nagar-4th-phase",
+          "name": "JP Nagar 4th Phase"
+        },
+        {
+          "id": "jayadeva-hospital",
+          "name": "Jayadeva Hospital"
+        },
+        {
+          "id": "tavarekere",
+          "name": "Tavarekere"
+        },
+        {
+          "id": "dairy-circle",
+          "name": "Dairy Circle"
+        },
+        {
+          "id": "lakkasandra",
+          "name": "Lakkasandra"
+        },
+        {
+          "id": "langford-town",
+          "name": "Langford Town"
+        },
+        {
+          "id": "rashtriya-military-school",
+          "name": "Rashtriya Military School"
+        },
+        {
+          "id": "shivajinagar",
+          "name": "Shivajinagar"
+        },
+        {
+          "id": "cantonment",
+          "name": "Cantonment"
+        },
+        {
+          "id": "pottery-town",
+          "name": "Pottery Town"
+        },
+        {
+          "id": "tannery-road",
+          "name": "Tannery Road"
+        },
+        {
+          "id": "venkateshpura",
+          "name": "Venkateshpura"
+        },
+        {
+          "id": "kadugundanahalli",
+          "name": "Kadugundanahalli"
+        },
+        {
+          "id": "nagawara",
+          "name": "Nagawara"
+        }
+      ]
+    }
+  ],
+  "stations": [
+    {
+      "id": "agara-lake",
+      "name": "Agara Lake",
+      "lines": ["blue"],
+      "connections": [
+        {
+          "lineId": "blue",
+          "direction": "backward",
+          "stationId": "hsr-layout"
+        },
+        {
+          "lineId": "blue",
+          "direction": "forward",
+          "stationId": "iblur"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "airport-city",
+      "name": "Airport City",
+      "lines": ["blue"],
+      "connections": [
+        {
+          "lineId": "blue",
+          "direction": "backward",
+          "stationId": "doddajala"
+        },
+        {
+          "lineId": "blue",
+          "direction": "forward",
+          "stationId": "kempegowda-international-airport"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "attiguppe",
+      "name": "Attiguppe",
+      "lines": ["purple"],
+      "connections": [
+        {
+          "lineId": "purple",
+          "direction": "backward",
+          "stationId": "deepanjali-nagar"
+        },
+        {
+          "lineId": "purple",
+          "direction": "forward",
+          "stationId": "vijayanagar"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "bagalur-cross",
+      "name": "Bagalur Cross",
+      "lines": ["blue"],
+      "connections": [
+        {
+          "lineId": "blue",
+          "direction": "backward",
+          "stationId": "bettahalasuru"
+        },
+        {
+          "lineId": "blue",
+          "direction": "forward",
+          "stationId": "doddajala"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "baiyappanahalli",
+      "name": "Baiyappanahalli",
+      "lines": ["purple"],
+      "connections": [
+        {
+          "lineId": "purple",
+          "direction": "backward",
+          "stationId": "swami-vivekananda-road"
+        },
+        {
+          "lineId": "purple",
+          "direction": "forward",
+          "stationId": "benniganahalli"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "banashankari",
+      "name": "Banashankari",
+      "lines": ["green"],
+      "connections": [
+        {
+          "lineId": "green",
+          "direction": "backward",
+          "stationId": "rashtreeya-vidyalaya-road"
+        },
+        {
+          "lineId": "green",
+          "direction": "forward",
+          "stationId": "jayaprakash-nagar"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "bellandur",
+      "name": "Bellandur",
+      "lines": ["blue"],
+      "connections": [
+        {
+          "lineId": "blue",
+          "direction": "backward",
+          "stationId": "iblur"
+        },
+        {
+          "lineId": "blue",
+          "direction": "forward",
+          "stationId": "devarabeesanahalli"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "benniganahalli",
+      "name": "Benniganahalli",
+      "lines": ["purple"],
+      "connections": [
+        {
+          "lineId": "purple",
+          "direction": "backward",
+          "stationId": "baiyappanahalli"
+        },
+        {
+          "lineId": "purple",
+          "direction": "forward",
+          "stationId": "kr-pura"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "beratena-agrahara",
+      "name": "Beratena Agrahara",
+      "lines": ["yellow"],
+      "connections": [
+        {
+          "lineId": "yellow",
+          "direction": "backward",
+          "stationId": "hosa-road"
+        },
+        {
+          "lineId": "yellow",
+          "direction": "forward",
+          "stationId": "electronic-city"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "bettahalasuru",
+      "name": "Bettahalasuru",
+      "lines": ["blue"],
+      "connections": [
+        {
+          "lineId": "blue",
+          "direction": "backward",
+          "stationId": "yelahanka"
+        },
+        {
+          "lineId": "blue",
+          "direction": "forward",
+          "stationId": "bagalur-cross"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "bommanahalli",
+      "name": "Bommanahalli",
+      "lines": ["yellow"],
+      "connections": [
+        {
+          "lineId": "yellow",
+          "direction": "backward",
+          "stationId": "central-silk-board"
+        },
+        {
+          "lineId": "yellow",
+          "direction": "forward",
+          "stationId": "hongasandra"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "bommasandra",
+      "name": "Bommasandra",
+      "lines": ["yellow"],
+      "connections": [
+        {
+          "lineId": "yellow",
+          "direction": "backward",
+          "stationId": "hebbagodi"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "btm-layout",
+      "name": "BTM Layout",
+      "lines": ["yellow"],
+      "connections": [
+        {
+          "lineId": "yellow",
+          "direction": "backward",
+          "stationId": "jayadeva-hospital"
+        },
+        {
+          "lineId": "yellow",
+          "direction": "forward",
+          "stationId": "central-silk-board"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "cantonment",
+      "name": "Cantonment",
+      "lines": ["pink"],
+      "connections": [
+        {
+          "lineId": "pink",
+          "direction": "backward",
+          "stationId": "shivajinagar"
+        },
+        {
+          "lineId": "pink",
+          "direction": "forward",
+          "stationId": "pottery-town"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "central-college",
+      "name": "Central College",
+      "lines": ["purple"],
+      "connections": [
+        {
+          "lineId": "purple",
+          "direction": "backward",
+          "stationId": "kempegowda-stn-majestic"
+        },
+        {
+          "lineId": "purple",
+          "direction": "forward",
+          "stationId": "vidhana-soudha"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "central-silk-board",
+      "name": "Central Silk Board",
+      "lines": ["yellow", "blue"],
+      "connections": [
+        {
+          "lineId": "blue",
+          "direction": "forward",
+          "stationId": "hsr-layout"
+        },
+        {
+          "lineId": "yellow",
+          "direction": "backward",
+          "stationId": "btm-layout"
+        },
+        {
+          "lineId": "yellow",
+          "direction": "forward",
+          "stationId": "bommanahalli"
+        }
+      ],
+      "isInterchange": true
+    },
+    {
+      "id": "challaghatta",
+      "name": "Challaghatta",
+      "lines": ["purple"],
+      "connections": [
+        {
+          "lineId": "purple",
+          "direction": "forward",
+          "stationId": "kengeri-bus-terminal"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "channasandra-hopefarm",
+      "name": "Channasandra (Hopefarm)",
+      "lines": ["purple"],
+      "connections": [
+        {
+          "lineId": "purple",
+          "direction": "backward",
+          "stationId": "kadugodi-tree-park"
+        },
+        {
+          "lineId": "purple",
+          "direction": "forward",
+          "stationId": "whitefield-kadugodi"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "chickpete",
+      "name": "Chickpete",
+      "lines": ["green"],
+      "connections": [
+        {
+          "lineId": "green",
+          "direction": "backward",
+          "stationId": "kempegowda-stn-majestic"
+        },
+        {
+          "lineId": "green",
+          "direction": "forward",
+          "stationId": "krishna-rajendra-market"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "chikkabidarakallu",
+      "name": "Chikkabidarakallu",
+      "lines": ["green"],
+      "connections": [
+        {
+          "lineId": "green",
+          "direction": "backward",
+          "stationId": "madavara"
+        },
+        {
+          "lineId": "green",
+          "direction": "forward",
+          "stationId": "manjunathanagar"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "cubbon-park",
+      "name": "Cubbon Park",
+      "lines": ["purple"],
+      "connections": [
+        {
+          "lineId": "purple",
+          "direction": "backward",
+          "stationId": "vidhana-soudha"
+        },
+        {
+          "lineId": "purple",
+          "direction": "forward",
+          "stationId": "mahatma-gandhi-road"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "dairy-circle",
+      "name": "Dairy Circle",
+      "lines": ["pink"],
+      "connections": [
+        {
+          "lineId": "pink",
+          "direction": "backward",
+          "stationId": "tavarekere"
+        },
+        {
+          "lineId": "pink",
+          "direction": "forward",
+          "stationId": "lakkasandra"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "dasarahalli",
+      "name": "Dasarahalli",
+      "lines": ["green"],
+      "connections": [
+        {
+          "lineId": "green",
+          "direction": "backward",
+          "stationId": "nagasandra"
+        },
+        {
+          "lineId": "green",
+          "direction": "forward",
+          "stationId": "jalahalli"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "deepanjali-nagar",
+      "name": "Deepanjali Nagar",
+      "lines": ["purple"],
+      "connections": [
+        {
+          "lineId": "purple",
+          "direction": "backward",
+          "stationId": "mysuru-road"
+        },
+        {
+          "lineId": "purple",
+          "direction": "forward",
+          "stationId": "attiguppe"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "devarabeesanahalli",
+      "name": "Devarabeesanahalli",
+      "lines": ["blue"],
+      "connections": [
+        {
+          "lineId": "blue",
+          "direction": "backward",
+          "stationId": "bellandur"
+        },
+        {
+          "lineId": "blue",
+          "direction": "forward",
+          "stationId": "kadubeesanahalli"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "doddajala",
+      "name": "Doddajala",
+      "lines": ["blue"],
+      "connections": [
+        {
+          "lineId": "blue",
+          "direction": "backward",
+          "stationId": "bagalur-cross"
+        },
+        {
+          "lineId": "blue",
+          "direction": "forward",
+          "stationId": "airport-city"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "doddakallasandra",
+      "name": "Doddakallasandra",
+      "lines": ["green"],
+      "connections": [
+        {
+          "lineId": "green",
+          "direction": "backward",
+          "stationId": "konanakunte-cross"
+        },
+        {
+          "lineId": "green",
+          "direction": "forward",
+          "stationId": "vajarahalli"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "doddanekundi",
+      "name": "Doddanekundi",
+      "lines": ["blue"],
+      "connections": [
+        {
+          "lineId": "blue",
+          "direction": "backward",
+          "stationId": "isro-karthik-nagar"
+        },
+        {
+          "lineId": "blue",
+          "direction": "forward",
+          "stationId": "drdo-sports-complex"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "drdo-sports-complex",
+      "name": "DRDO Sports Complex",
+      "lines": ["blue"],
+      "connections": [
+        {
+          "lineId": "blue",
+          "direction": "backward",
+          "stationId": "doddanekundi"
+        },
+        {
+          "lineId": "blue",
+          "direction": "forward",
+          "stationId": "mahadevapura"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "electronic-city",
+      "name": "Electronic City",
+      "lines": ["yellow"],
+      "connections": [
+        {
+          "lineId": "yellow",
+          "direction": "backward",
+          "stationId": "beratena-agrahara"
+        },
+        {
+          "lineId": "yellow",
+          "direction": "forward",
+          "stationId": "konnapana-agrahara"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "garudacharpalya",
+      "name": "Garudacharpalya",
+      "lines": ["purple"],
+      "connections": [
+        {
+          "lineId": "purple",
+          "direction": "backward",
+          "stationId": "mahadevapura"
+        },
+        {
+          "lineId": "purple",
+          "direction": "forward",
+          "stationId": "singayyanapalya"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "goraguntepalya",
+      "name": "Goraguntepalya",
+      "lines": ["green"],
+      "connections": [
+        {
+          "lineId": "green",
+          "direction": "backward",
+          "stationId": "peenya"
+        },
+        {
+          "lineId": "green",
+          "direction": "forward",
+          "stationId": "yeshwantpur"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "halasuru",
+      "name": "Halasuru",
+      "lines": ["purple"],
+      "connections": [
+        {
+          "lineId": "purple",
+          "direction": "backward",
+          "stationId": "trinity"
+        },
+        {
+          "lineId": "purple",
+          "direction": "forward",
+          "stationId": "indiranagar"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "hbr-layout",
+      "name": "HBR Layout",
+      "lines": ["blue"],
+      "connections": [
+        {
+          "lineId": "blue",
+          "direction": "backward",
+          "stationId": "kalyan-nagar"
+        },
+        {
+          "lineId": "blue",
+          "direction": "forward",
+          "stationId": "nagawara"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "hebbagodi",
+      "name": "Hebbagodi",
+      "lines": ["yellow"],
+      "connections": [
+        {
+          "lineId": "yellow",
+          "direction": "backward",
+          "stationId": "huskur-road"
+        },
+        {
+          "lineId": "yellow",
+          "direction": "forward",
+          "stationId": "bommasandra"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "hebbal",
+      "name": "Hebbal",
+      "lines": ["blue"],
+      "connections": [
+        {
+          "lineId": "blue",
+          "direction": "backward",
+          "stationId": "kempapura"
+        },
+        {
+          "lineId": "blue",
+          "direction": "forward",
+          "stationId": "kodigehalli"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "hongasandra",
+      "name": "Hongasandra",
+      "lines": ["yellow"],
+      "connections": [
+        {
+          "lineId": "yellow",
+          "direction": "backward",
+          "stationId": "bommanahalli"
+        },
+        {
+          "lineId": "yellow",
+          "direction": "forward",
+          "stationId": "kudlu-gate"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "hoodi",
+      "name": "Hoodi",
+      "lines": ["purple"],
+      "connections": [
+        {
+          "lineId": "purple",
+          "direction": "backward",
+          "stationId": "singayyanapalya"
+        },
+        {
+          "lineId": "purple",
+          "direction": "forward",
+          "stationId": "seetharam-palya"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "horamavu",
+      "name": "Horamavu",
+      "lines": ["blue"],
+      "connections": [
+        {
+          "lineId": "blue",
+          "direction": "backward",
+          "stationId": "kasturinagar"
+        },
+        {
+          "lineId": "blue",
+          "direction": "forward",
+          "stationId": "hrbr-layout"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "hosa-road",
+      "name": "Hosa Road",
+      "lines": ["yellow"],
+      "connections": [
+        {
+          "lineId": "yellow",
+          "direction": "backward",
+          "stationId": "singasandra"
+        },
+        {
+          "lineId": "yellow",
+          "direction": "forward",
+          "stationId": "beratena-agrahara"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "hosahalli",
+      "name": "Hosahalli",
+      "lines": ["purple"],
+      "connections": [
+        {
+          "lineId": "purple",
+          "direction": "backward",
+          "stationId": "magadi-road"
+        },
+        {
+          "lineId": "purple",
+          "direction": "forward",
+          "stationId": "ksr-city-railway-stn"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "hrbr-layout",
+      "name": "HRBR Layout",
+      "lines": ["blue"],
+      "connections": [
+        {
+          "lineId": "blue",
+          "direction": "backward",
+          "stationId": "horamavu"
+        },
+        {
+          "lineId": "blue",
+          "direction": "forward",
+          "stationId": "kalyan-nagar"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "hsr-layout",
+      "name": "HSR Layout",
+      "lines": ["blue"],
+      "connections": [
+        {
+          "lineId": "blue",
+          "direction": "backward",
+          "stationId": "central-silk-board"
+        },
+        {
+          "lineId": "blue",
+          "direction": "forward",
+          "stationId": "agara-lake"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "hulimavu",
+      "name": "Hulimavu",
+      "lines": ["pink"],
+      "connections": [
+        {
+          "lineId": "pink",
+          "direction": "backward",
+          "stationId": "kalena-agrahara"
+        },
+        {
+          "lineId": "pink",
+          "direction": "forward",
+          "stationId": "iim-bangalore"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "huskur-road",
+      "name": "Huskur Road",
+      "lines": ["yellow"],
+      "connections": [
+        {
+          "lineId": "yellow",
+          "direction": "backward",
+          "stationId": "konnapana-agrahara"
+        },
+        {
+          "lineId": "yellow",
+          "direction": "forward",
+          "stationId": "hebbagodi"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "iblur",
+      "name": "Iblur",
+      "lines": ["blue"],
+      "connections": [
+        {
+          "lineId": "blue",
+          "direction": "backward",
+          "stationId": "agara-lake"
+        },
+        {
+          "lineId": "blue",
+          "direction": "forward",
+          "stationId": "bellandur"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "iim-bangalore",
+      "name": "IIM Bangalore",
+      "lines": ["pink"],
+      "connections": [
+        {
+          "lineId": "pink",
+          "direction": "backward",
+          "stationId": "hulimavu"
+        },
+        {
+          "lineId": "pink",
+          "direction": "forward",
+          "stationId": "jp-nagar-4th-phase"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "indiranagar",
+      "name": "Indiranagar",
+      "lines": ["purple"],
+      "connections": [
+        {
+          "lineId": "purple",
+          "direction": "backward",
+          "stationId": "halasuru"
+        },
+        {
+          "lineId": "purple",
+          "direction": "forward",
+          "stationId": "swami-vivekananda-road"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "isro-karthik-nagar",
+      "name": "ISRO (Karthik Nagar)",
+      "lines": ["blue"],
+      "connections": [
+        {
+          "lineId": "blue",
+          "direction": "backward",
+          "stationId": "marathahalli"
+        },
+        {
+          "lineId": "blue",
+          "direction": "forward",
+          "stationId": "doddanekundi"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "jakkur-cross",
+      "name": "Jakkur Cross",
+      "lines": ["blue"],
+      "connections": [
+        {
+          "lineId": "blue",
+          "direction": "backward",
+          "stationId": "kodigehalli"
+        },
+        {
+          "lineId": "blue",
+          "direction": "forward",
+          "stationId": "yelahanka"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "jalahalli",
+      "name": "Jalahalli",
+      "lines": ["green"],
+      "connections": [
+        {
+          "lineId": "green",
+          "direction": "backward",
+          "stationId": "dasarahalli"
+        },
+        {
+          "lineId": "green",
+          "direction": "forward",
+          "stationId": "peenya-industry"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "jayadeva-hospital",
+      "name": "Jayadeva Hospital",
+      "lines": ["yellow", "pink"],
+      "connections": [
+        {
+          "lineId": "pink",
+          "direction": "backward",
+          "stationId": "jp-nagar-4th-phase"
+        },
+        {
+          "lineId": "pink",
+          "direction": "forward",
+          "stationId": "tavarekere"
+        },
+        {
+          "lineId": "yellow",
+          "direction": "backward",
+          "stationId": "ragigudda"
+        },
+        {
+          "lineId": "yellow",
+          "direction": "forward",
+          "stationId": "btm-layout"
+        }
+      ],
+      "isInterchange": true
+    },
+    {
+      "id": "jayanagar",
+      "name": "Jayanagar",
+      "lines": ["green"],
+      "connections": [
+        {
+          "lineId": "green",
+          "direction": "backward",
+          "stationId": "south-end-circle"
+        },
+        {
+          "lineId": "green",
+          "direction": "forward",
+          "stationId": "rashtreeya-vidyalaya-road"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "jayaprakash-nagar",
+      "name": "Jayaprakash Nagar",
+      "lines": ["green"],
+      "connections": [
+        {
+          "lineId": "green",
+          "direction": "backward",
+          "stationId": "banashankari"
+        },
+        {
+          "lineId": "green",
+          "direction": "forward",
+          "stationId": "yelachenahalli"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "jnanabharathi",
+      "name": "Jnanabharathi",
+      "lines": ["purple"],
+      "connections": [
+        {
+          "lineId": "purple",
+          "direction": "backward",
+          "stationId": "rajarajeshwari-nagar"
+        },
+        {
+          "lineId": "purple",
+          "direction": "forward",
+          "stationId": "nayandahalli"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "jp-nagar-4th-phase",
+      "name": "JP Nagar 4th Phase",
+      "lines": ["pink"],
+      "connections": [
+        {
+          "lineId": "pink",
+          "direction": "backward",
+          "stationId": "iim-bangalore"
+        },
+        {
+          "lineId": "pink",
+          "direction": "forward",
+          "stationId": "jayadeva-hospital"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "kadubeesanahalli",
+      "name": "Kadubeesanahalli",
+      "lines": ["blue"],
+      "connections": [
+        {
+          "lineId": "blue",
+          "direction": "backward",
+          "stationId": "devarabeesanahalli"
+        },
+        {
+          "lineId": "blue",
+          "direction": "forward",
+          "stationId": "marathahalli"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "kadugodi-tree-park",
+      "name": "Kadugodi Tree Park",
+      "lines": ["purple"],
+      "connections": [
+        {
+          "lineId": "purple",
+          "direction": "backward",
+          "stationId": "pattandur-agrahara"
+        },
+        {
+          "lineId": "purple",
+          "direction": "forward",
+          "stationId": "channasandra-hopefarm"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "kadugundanahalli",
+      "name": "Kadugundanahalli",
+      "lines": ["pink"],
+      "connections": [
+        {
+          "lineId": "pink",
+          "direction": "backward",
+          "stationId": "venkateshpura"
+        },
+        {
+          "lineId": "pink",
+          "direction": "forward",
+          "stationId": "nagawara"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "kalena-agrahara",
+      "name": "Kalena Agrahara",
+      "lines": ["pink"],
+      "connections": [
+        {
+          "lineId": "pink",
+          "direction": "forward",
+          "stationId": "hulimavu"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "kalyan-nagar",
+      "name": "Kalyan Nagar",
+      "lines": ["blue"],
+      "connections": [
+        {
+          "lineId": "blue",
+          "direction": "backward",
+          "stationId": "hrbr-layout"
+        },
+        {
+          "lineId": "blue",
+          "direction": "forward",
+          "stationId": "hbr-layout"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "kasturinagar",
+      "name": "Kasturinagar",
+      "lines": ["blue"],
+      "connections": [
+        {
+          "lineId": "blue",
+          "direction": "backward",
+          "stationId": "kr-pura"
+        },
+        {
+          "lineId": "blue",
+          "direction": "forward",
+          "stationId": "horamavu"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "kempapura",
+      "name": "Kempapura",
+      "lines": ["blue"],
+      "connections": [
+        {
+          "lineId": "blue",
+          "direction": "backward",
+          "stationId": "veerannapalya"
+        },
+        {
+          "lineId": "blue",
+          "direction": "forward",
+          "stationId": "hebbal"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "kempegowda-international-airport",
+      "name": "Kempegowda International Airport",
+      "lines": ["blue"],
+      "connections": [
+        {
+          "lineId": "blue",
+          "direction": "backward",
+          "stationId": "airport-city"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "kempegowda-stn-majestic",
+      "name": "Kempegowda Stn., Majestic",
+      "lines": ["purple", "green"],
+      "connections": [
+        {
+          "lineId": "green",
+          "direction": "backward",
+          "stationId": "sampige-road"
+        },
+        {
+          "lineId": "green",
+          "direction": "forward",
+          "stationId": "chickpete"
+        },
+        {
+          "lineId": "purple",
+          "direction": "backward",
+          "stationId": "ksr-city-railway-stn"
+        },
+        {
+          "lineId": "purple",
+          "direction": "forward",
+          "stationId": "central-college"
+        }
+      ],
+      "isInterchange": true
+    },
+    {
+      "id": "kengeri",
+      "name": "Kengeri",
+      "lines": ["purple"],
+      "connections": [
+        {
+          "lineId": "purple",
+          "direction": "backward",
+          "stationId": "kengeri-bus-terminal"
+        },
+        {
+          "lineId": "purple",
+          "direction": "forward",
+          "stationId": "pattanagere"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "kengeri-bus-terminal",
+      "name": "Kengeri Bus Terminal",
+      "lines": ["purple"],
+      "connections": [
+        {
+          "lineId": "purple",
+          "direction": "backward",
+          "stationId": "challaghatta"
+        },
+        {
+          "lineId": "purple",
+          "direction": "forward",
+          "stationId": "kengeri"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "kodigehalli",
+      "name": "Kodigehalli",
+      "lines": ["blue"],
+      "connections": [
+        {
+          "lineId": "blue",
+          "direction": "backward",
+          "stationId": "hebbal"
+        },
+        {
+          "lineId": "blue",
+          "direction": "forward",
+          "stationId": "jakkur-cross"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "konanakunte-cross",
+      "name": "Konanakunte Cross",
+      "lines": ["green"],
+      "connections": [
+        {
+          "lineId": "green",
+          "direction": "backward",
+          "stationId": "yelachenahalli"
+        },
+        {
+          "lineId": "green",
+          "direction": "forward",
+          "stationId": "doddakallasandra"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "konnapana-agrahara",
+      "name": "Konnapana Agrahara",
+      "lines": ["yellow"],
+      "connections": [
+        {
+          "lineId": "yellow",
+          "direction": "backward",
+          "stationId": "electronic-city"
+        },
+        {
+          "lineId": "yellow",
+          "direction": "forward",
+          "stationId": "huskur-road"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "kr-pura",
+      "name": "KR Pura",
+      "lines": ["purple", "blue"],
+      "connections": [
+        {
+          "lineId": "blue",
+          "direction": "backward",
+          "stationId": "mahadevapura"
+        },
+        {
+          "lineId": "blue",
+          "direction": "forward",
+          "stationId": "kasturinagar"
+        },
+        {
+          "lineId": "purple",
+          "direction": "backward",
+          "stationId": "benniganahalli"
+        },
+        {
+          "lineId": "purple",
+          "direction": "forward",
+          "stationId": "mahadevapura"
+        }
+      ],
+      "isInterchange": true
+    },
+    {
+      "id": "krishna-rajendra-market",
+      "name": "Krishna Rajendra Market",
+      "lines": ["green"],
+      "connections": [
+        {
+          "lineId": "green",
+          "direction": "backward",
+          "stationId": "chickpete"
+        },
+        {
+          "lineId": "green",
+          "direction": "forward",
+          "stationId": "national-college"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "ksr-city-railway-stn",
+      "name": "KSR City Railway Stn.",
+      "lines": ["purple"],
+      "connections": [
+        {
+          "lineId": "purple",
+          "direction": "backward",
+          "stationId": "hosahalli"
+        },
+        {
+          "lineId": "purple",
+          "direction": "forward",
+          "stationId": "kempegowda-stn-majestic"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "kudlu-gate",
+      "name": "Kudlu Gate",
+      "lines": ["yellow"],
+      "connections": [
+        {
+          "lineId": "yellow",
+          "direction": "backward",
+          "stationId": "hongasandra"
+        },
+        {
+          "lineId": "yellow",
+          "direction": "forward",
+          "stationId": "singasandra"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "kundalahalli",
+      "name": "Kundalahalli",
+      "lines": ["purple"],
+      "connections": [
+        {
+          "lineId": "purple",
+          "direction": "backward",
+          "stationId": "seetharam-palya"
+        },
+        {
+          "lineId": "purple",
+          "direction": "forward",
+          "stationId": "nallurhalli"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "kuvempu-road",
+      "name": "Kuvempu Road",
+      "lines": ["green"],
+      "connections": [
+        {
+          "lineId": "green",
+          "direction": "backward",
+          "stationId": "rajajinagar"
+        },
+        {
+          "lineId": "green",
+          "direction": "forward",
+          "stationId": "srirampura"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "lakkasandra",
+      "name": "Lakkasandra",
+      "lines": ["pink"],
+      "connections": [
+        {
+          "lineId": "pink",
+          "direction": "backward",
+          "stationId": "dairy-circle"
+        },
+        {
+          "lineId": "pink",
+          "direction": "forward",
+          "stationId": "langford-town"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "lalbagh",
+      "name": "Lalbagh",
+      "lines": ["green"],
+      "connections": [
+        {
+          "lineId": "green",
+          "direction": "backward",
+          "stationId": "national-college"
+        },
+        {
+          "lineId": "green",
+          "direction": "forward",
+          "stationId": "south-end-circle"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "langford-town",
+      "name": "Langford Town",
+      "lines": ["pink"],
+      "connections": [
+        {
+          "lineId": "pink",
+          "direction": "backward",
+          "stationId": "lakkasandra"
+        },
+        {
+          "lineId": "pink",
+          "direction": "forward",
+          "stationId": "rashtriya-military-school"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "madavara",
+      "name": "Madavara",
+      "lines": ["green"],
+      "connections": [
+        {
+          "lineId": "green",
+          "direction": "forward",
+          "stationId": "chikkabidarakallu"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "magadi-road",
+      "name": "Magadi Road",
+      "lines": ["purple"],
+      "connections": [
+        {
+          "lineId": "purple",
+          "direction": "backward",
+          "stationId": "vijayanagar"
+        },
+        {
+          "lineId": "purple",
+          "direction": "forward",
+          "stationId": "hosahalli"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "mahadevapura",
+      "name": "Mahadevapura",
+      "lines": ["purple", "blue"],
+      "connections": [
+        {
+          "lineId": "blue",
+          "direction": "backward",
+          "stationId": "drdo-sports-complex"
+        },
+        {
+          "lineId": "blue",
+          "direction": "forward",
+          "stationId": "kr-pura"
+        },
+        {
+          "lineId": "purple",
+          "direction": "backward",
+          "stationId": "kr-pura"
+        },
+        {
+          "lineId": "purple",
+          "direction": "forward",
+          "stationId": "garudacharpalya"
+        }
+      ],
+      "isInterchange": true
+    },
+    {
+      "id": "mahalakshmi",
+      "name": "Mahalakshmi",
+      "lines": ["green"],
+      "connections": [
+        {
+          "lineId": "green",
+          "direction": "backward",
+          "stationId": "sandal-soap-factory"
+        },
+        {
+          "lineId": "green",
+          "direction": "forward",
+          "stationId": "rajajinagar"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "mahatma-gandhi-road",
+      "name": "Mahatma Gandhi Road",
+      "lines": ["purple"],
+      "connections": [
+        {
+          "lineId": "purple",
+          "direction": "backward",
+          "stationId": "cubbon-park"
+        },
+        {
+          "lineId": "purple",
+          "direction": "forward",
+          "stationId": "trinity"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "manjunathanagar",
+      "name": "Manjunathanagar",
+      "lines": ["green"],
+      "connections": [
+        {
+          "lineId": "green",
+          "direction": "backward",
+          "stationId": "chikkabidarakallu"
+        },
+        {
+          "lineId": "green",
+          "direction": "forward",
+          "stationId": "nagasandra"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "marathahalli",
+      "name": "Marathahalli",
+      "lines": ["blue"],
+      "connections": [
+        {
+          "lineId": "blue",
+          "direction": "backward",
+          "stationId": "kadubeesanahalli"
+        },
+        {
+          "lineId": "blue",
+          "direction": "forward",
+          "stationId": "isro-karthik-nagar"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "mysuru-road",
+      "name": "Mysuru Road",
+      "lines": ["purple"],
+      "connections": [
+        {
+          "lineId": "purple",
+          "direction": "backward",
+          "stationId": "nayandahalli"
+        },
+        {
+          "lineId": "purple",
+          "direction": "forward",
+          "stationId": "deepanjali-nagar"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "nagasandra",
+      "name": "Nagasandra",
+      "lines": ["green"],
+      "connections": [
+        {
+          "lineId": "green",
+          "direction": "backward",
+          "stationId": "manjunathanagar"
+        },
+        {
+          "lineId": "green",
+          "direction": "forward",
+          "stationId": "dasarahalli"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "nagawara",
+      "name": "Nagawara",
+      "lines": ["blue", "pink"],
+      "connections": [
+        {
+          "lineId": "blue",
+          "direction": "backward",
+          "stationId": "hbr-layout"
+        },
+        {
+          "lineId": "blue",
+          "direction": "forward",
+          "stationId": "veerannapalya"
+        },
+        {
+          "lineId": "pink",
+          "direction": "backward",
+          "stationId": "kadugundanahalli"
+        }
+      ],
+      "isInterchange": true
+    },
+    {
+      "id": "nallurhalli",
+      "name": "Nallurhalli",
+      "lines": ["purple"],
+      "connections": [
+        {
+          "lineId": "purple",
+          "direction": "backward",
+          "stationId": "kundalahalli"
+        },
+        {
+          "lineId": "purple",
+          "direction": "forward",
+          "stationId": "sri-sathya-sai-hospital"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "national-college",
+      "name": "National College",
+      "lines": ["green"],
+      "connections": [
+        {
+          "lineId": "green",
+          "direction": "backward",
+          "stationId": "krishna-rajendra-market"
+        },
+        {
+          "lineId": "green",
+          "direction": "forward",
+          "stationId": "lalbagh"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "nayandahalli",
+      "name": "Nayandahalli",
+      "lines": ["purple"],
+      "connections": [
+        {
+          "lineId": "purple",
+          "direction": "backward",
+          "stationId": "jnanabharathi"
+        },
+        {
+          "lineId": "purple",
+          "direction": "forward",
+          "stationId": "mysuru-road"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "pattanagere",
+      "name": "Pattanagere",
+      "lines": ["purple"],
+      "connections": [
+        {
+          "lineId": "purple",
+          "direction": "backward",
+          "stationId": "kengeri"
+        },
+        {
+          "lineId": "purple",
+          "direction": "forward",
+          "stationId": "rajarajeshwari-nagar"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "pattandur-agrahara",
+      "name": "Pattandur Agrahara",
+      "lines": ["purple"],
+      "connections": [
+        {
+          "lineId": "purple",
+          "direction": "backward",
+          "stationId": "sri-sathya-sai-hospital"
+        },
+        {
+          "lineId": "purple",
+          "direction": "forward",
+          "stationId": "kadugodi-tree-park"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "peenya",
+      "name": "Peenya",
+      "lines": ["green"],
+      "connections": [
+        {
+          "lineId": "green",
+          "direction": "backward",
+          "stationId": "peenya-industry"
+        },
+        {
+          "lineId": "green",
+          "direction": "forward",
+          "stationId": "goraguntepalya"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "peenya-industry",
+      "name": "Peenya Industry",
+      "lines": ["green"],
+      "connections": [
+        {
+          "lineId": "green",
+          "direction": "backward",
+          "stationId": "jalahalli"
+        },
+        {
+          "lineId": "green",
+          "direction": "forward",
+          "stationId": "peenya"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "pottery-town",
+      "name": "Pottery Town",
+      "lines": ["pink"],
+      "connections": [
+        {
+          "lineId": "pink",
+          "direction": "backward",
+          "stationId": "cantonment"
+        },
+        {
+          "lineId": "pink",
+          "direction": "forward",
+          "stationId": "tannery-road"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "ragigudda",
+      "name": "Ragigudda",
+      "lines": ["yellow"],
+      "connections": [
+        {
+          "lineId": "yellow",
+          "direction": "backward",
+          "stationId": "rashtreeya-vidyalaya-road"
+        },
+        {
+          "lineId": "yellow",
+          "direction": "forward",
+          "stationId": "jayadeva-hospital"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "rajajinagar",
+      "name": "Rajajinagar",
+      "lines": ["green"],
+      "connections": [
+        {
+          "lineId": "green",
+          "direction": "backward",
+          "stationId": "mahalakshmi"
+        },
+        {
+          "lineId": "green",
+          "direction": "forward",
+          "stationId": "kuvempu-road"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "rajarajeshwari-nagar",
+      "name": "Rajarajeshwari Nagar",
+      "lines": ["purple"],
+      "connections": [
+        {
+          "lineId": "purple",
+          "direction": "backward",
+          "stationId": "pattanagere"
+        },
+        {
+          "lineId": "purple",
+          "direction": "forward",
+          "stationId": "jnanabharathi"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "rashtreeya-vidyalaya-road",
+      "name": "Rashtreeya Vidyalaya Road",
+      "lines": ["green", "yellow"],
+      "connections": [
+        {
+          "lineId": "green",
+          "direction": "backward",
+          "stationId": "jayanagar"
+        },
+        {
+          "lineId": "green",
+          "direction": "forward",
+          "stationId": "banashankari"
+        },
+        {
+          "lineId": "yellow",
+          "direction": "forward",
+          "stationId": "ragigudda"
+        }
+      ],
+      "isInterchange": true
+    },
+    {
+      "id": "rashtriya-military-school",
+      "name": "Rashtriya Military School",
+      "lines": ["pink"],
+      "connections": [
+        {
+          "lineId": "pink",
+          "direction": "backward",
+          "stationId": "langford-town"
+        },
+        {
+          "lineId": "pink",
+          "direction": "forward",
+          "stationId": "shivajinagar"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "sampige-road",
+      "name": "Sampige Road",
+      "lines": ["green"],
+      "connections": [
+        {
+          "lineId": "green",
+          "direction": "backward",
+          "stationId": "srirampura"
+        },
+        {
+          "lineId": "green",
+          "direction": "forward",
+          "stationId": "kempegowda-stn-majestic"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "sandal-soap-factory",
+      "name": "Sandal Soap Factory",
+      "lines": ["green"],
+      "connections": [
+        {
+          "lineId": "green",
+          "direction": "backward",
+          "stationId": "yeshwantpur"
+        },
+        {
+          "lineId": "green",
+          "direction": "forward",
+          "stationId": "mahalakshmi"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "seetharam-palya",
+      "name": "Seetharam Palya",
+      "lines": ["purple"],
+      "connections": [
+        {
+          "lineId": "purple",
+          "direction": "backward",
+          "stationId": "hoodi"
+        },
+        {
+          "lineId": "purple",
+          "direction": "forward",
+          "stationId": "kundalahalli"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "shivajinagar",
+      "name": "Shivajinagar",
+      "lines": ["pink"],
+      "connections": [
+        {
+          "lineId": "pink",
+          "direction": "backward",
+          "stationId": "rashtriya-military-school"
+        },
+        {
+          "lineId": "pink",
+          "direction": "forward",
+          "stationId": "cantonment"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "silk-institute",
+      "name": "Silk Institute",
+      "lines": ["green"],
+      "connections": [
+        {
+          "lineId": "green",
+          "direction": "backward",
+          "stationId": "thalaghattapura"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "singasandra",
+      "name": "Singasandra",
+      "lines": ["yellow"],
+      "connections": [
+        {
+          "lineId": "yellow",
+          "direction": "backward",
+          "stationId": "kudlu-gate"
+        },
+        {
+          "lineId": "yellow",
+          "direction": "forward",
+          "stationId": "hosa-road"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "singayyanapalya",
+      "name": "Singayyanapalya",
+      "lines": ["purple"],
+      "connections": [
+        {
+          "lineId": "purple",
+          "direction": "backward",
+          "stationId": "garudacharpalya"
+        },
+        {
+          "lineId": "purple",
+          "direction": "forward",
+          "stationId": "hoodi"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "south-end-circle",
+      "name": "South End Circle",
+      "lines": ["green"],
+      "connections": [
+        {
+          "lineId": "green",
+          "direction": "backward",
+          "stationId": "lalbagh"
+        },
+        {
+          "lineId": "green",
+          "direction": "forward",
+          "stationId": "jayanagar"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "sri-sathya-sai-hospital",
+      "name": "Sri Sathya Sai Hospital",
+      "lines": ["purple"],
+      "connections": [
+        {
+          "lineId": "purple",
+          "direction": "backward",
+          "stationId": "nallurhalli"
+        },
+        {
+          "lineId": "purple",
+          "direction": "forward",
+          "stationId": "pattandur-agrahara"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "srirampura",
+      "name": "Srirampura",
+      "lines": ["green"],
+      "connections": [
+        {
+          "lineId": "green",
+          "direction": "backward",
+          "stationId": "kuvempu-road"
+        },
+        {
+          "lineId": "green",
+          "direction": "forward",
+          "stationId": "sampige-road"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "swami-vivekananda-road",
+      "name": "Swami Vivekananda Road",
+      "lines": ["purple"],
+      "connections": [
+        {
+          "lineId": "purple",
+          "direction": "backward",
+          "stationId": "indiranagar"
+        },
+        {
+          "lineId": "purple",
+          "direction": "forward",
+          "stationId": "baiyappanahalli"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "tannery-road",
+      "name": "Tannery Road",
+      "lines": ["pink"],
+      "connections": [
+        {
+          "lineId": "pink",
+          "direction": "backward",
+          "stationId": "pottery-town"
+        },
+        {
+          "lineId": "pink",
+          "direction": "forward",
+          "stationId": "venkateshpura"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "tavarekere",
+      "name": "Tavarekere",
+      "lines": ["pink"],
+      "connections": [
+        {
+          "lineId": "pink",
+          "direction": "backward",
+          "stationId": "jayadeva-hospital"
+        },
+        {
+          "lineId": "pink",
+          "direction": "forward",
+          "stationId": "dairy-circle"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "thalaghattapura",
+      "name": "Thalaghattapura",
+      "lines": ["green"],
+      "connections": [
+        {
+          "lineId": "green",
+          "direction": "backward",
+          "stationId": "vajarahalli"
+        },
+        {
+          "lineId": "green",
+          "direction": "forward",
+          "stationId": "silk-institute"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "trinity",
+      "name": "Trinity",
+      "lines": ["purple"],
+      "connections": [
+        {
+          "lineId": "purple",
+          "direction": "backward",
+          "stationId": "mahatma-gandhi-road"
+        },
+        {
+          "lineId": "purple",
+          "direction": "forward",
+          "stationId": "halasuru"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "vajarahalli",
+      "name": "Vajarahalli",
+      "lines": ["green"],
+      "connections": [
+        {
+          "lineId": "green",
+          "direction": "backward",
+          "stationId": "doddakallasandra"
+        },
+        {
+          "lineId": "green",
+          "direction": "forward",
+          "stationId": "thalaghattapura"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "veerannapalya",
+      "name": "Veerannapalya",
+      "lines": ["blue"],
+      "connections": [
+        {
+          "lineId": "blue",
+          "direction": "backward",
+          "stationId": "nagawara"
+        },
+        {
+          "lineId": "blue",
+          "direction": "forward",
+          "stationId": "kempapura"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "venkateshpura",
+      "name": "Venkateshpura",
+      "lines": ["pink"],
+      "connections": [
+        {
+          "lineId": "pink",
+          "direction": "backward",
+          "stationId": "tannery-road"
+        },
+        {
+          "lineId": "pink",
+          "direction": "forward",
+          "stationId": "kadugundanahalli"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "vidhana-soudha",
+      "name": "Vidhana Soudha",
+      "lines": ["purple"],
+      "connections": [
+        {
+          "lineId": "purple",
+          "direction": "backward",
+          "stationId": "central-college"
+        },
+        {
+          "lineId": "purple",
+          "direction": "forward",
+          "stationId": "cubbon-park"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "vijayanagar",
+      "name": "Vijayanagar",
+      "lines": ["purple"],
+      "connections": [
+        {
+          "lineId": "purple",
+          "direction": "backward",
+          "stationId": "attiguppe"
+        },
+        {
+          "lineId": "purple",
+          "direction": "forward",
+          "stationId": "magadi-road"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "whitefield-kadugodi",
+      "name": "Whitefield (Kadugodi)",
+      "lines": ["purple"],
+      "connections": [
+        {
+          "lineId": "purple",
+          "direction": "backward",
+          "stationId": "channasandra-hopefarm"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "yelachenahalli",
+      "name": "Yelachenahalli",
+      "lines": ["green"],
+      "connections": [
+        {
+          "lineId": "green",
+          "direction": "backward",
+          "stationId": "jayaprakash-nagar"
+        },
+        {
+          "lineId": "green",
+          "direction": "forward",
+          "stationId": "konanakunte-cross"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "yelahanka",
+      "name": "Yelahanka",
+      "lines": ["blue"],
+      "connections": [
+        {
+          "lineId": "blue",
+          "direction": "backward",
+          "stationId": "jakkur-cross"
+        },
+        {
+          "lineId": "blue",
+          "direction": "forward",
+          "stationId": "bettahalasuru"
+        }
+      ],
+      "isInterchange": false
+    },
+    {
+      "id": "yeshwantpur",
+      "name": "Yeshwantpur",
+      "lines": ["green"],
+      "connections": [
+        {
+          "lineId": "green",
+          "direction": "backward",
+          "stationId": "goraguntepalya"
+        },
+        {
+          "lineId": "green",
+          "direction": "forward",
+          "stationId": "sandal-soap-factory"
+        }
+      ],
+      "isInterchange": false
+    }
+  ]
+}

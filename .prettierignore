@@ -1,0 +1,11 @@
+node_modules
+dist
+build
+coverage
+.cursor
+.specify
+.vite
+.vitest
+.cache
+*.log
+
