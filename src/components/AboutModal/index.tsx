@@ -44,7 +44,7 @@ export function AboutModal({ isOpen, onClose }: AboutModalProps): JSX.Element {
             aria-label="Close"
             type="button"
           >
-            ×
+            <span className="about-modal__close-icon">×</span>
           </button>
           <div className="about-modal__content">
             <h2 className="about-modal__title">Why I Built This</h2>

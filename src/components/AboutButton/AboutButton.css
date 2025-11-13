@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   gap: var(--spacing-8);
-  padding: var(--spacing-8) var(--spacing-12);
+  padding: var(--spacing-8) var(--spacing-8);
   border: none;
   border-radius: 9999px;
   background-color: #ffffff;
@@ -61,12 +61,16 @@
   .about-button {
     top: var(--spacing-12);
     right: var(--spacing-12);
-    padding: var(--spacing-6) var(--spacing-10);
-    max-width: 36px;
+    padding: var(--spacing-6) var(--spacing-6);
+    max-width: 40px;
+  }
+
+  .about-button__text {
+    display: none;
   }
 
   .about-button:hover {
-    max-width: 36px;
+    max-width: 40px;
   }
 
   .about-button:hover .about-button__text {
@@ -79,4 +83,3 @@
     font-size: 0.875rem;
   }
 }
-
