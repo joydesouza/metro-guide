@@ -21,29 +21,28 @@ describe("RoutePlanner", () => {
       "central-silk-board",
       "sandal-soap-factory",
     );
-
     expect(plan.totalInterchanges).toBe(1);
-    expect(plan.totalStops).toBe(8);
+    expect(plan.totalStops).toBe(17);
     expect(plan.segments).toHaveLength(2);
     expect(plan.segments[0]).toMatchObject({
       lineId: "yellow",
       lineName: "Yellow Line",
       startStationId: "central-silk-board",
-      endStationId: "rv-road",
-      terminalStationName: "RV Road",
+      endStationId: "rashtreeya-vidyalaya-road",
+      terminalStationName: "Rashtreeya Vidyalaya Road",
       stopCount: 4,
     });
     expect(plan.segments[1]).toMatchObject({
       lineId: "green",
       lineName: "Green Line",
-      startStationId: "rv-road",
+      startStationId: "rashtreeya-vidyalaya-road",
       endStationId: "sandal-soap-factory",
       terminalStationName: "Madavara",
-      stopCount: 4,
+      stopCount: 13,
     });
     expect(plan.interchanges).toHaveLength(1);
     expect(plan.interchanges[0]).toMatchObject({
-      stationId: "rv-road",
+      stationId: "rashtreeya-vidyalaya-road",
       fromLineId: "yellow",
       toLineId: "green",
       nextTerminalStationName: "Madavara",
@@ -51,15 +50,17 @@ describe("RoutePlanner", () => {
   });
 
   it("computes a journey staying on a single line", () => {
-    const plan = planner.planJourney("lalbagh", "mantri-square");
+    const plan = planner.planJourney("lalbagh", "rajajinagar");
 
+    expect(plan.totalStops).toBe(8);
     expect(plan.totalInterchanges).toBe(0);
     expect(plan.segments).toHaveLength(1);
     expect(plan.segments[0]).toMatchObject({
       lineId: "green",
       startStationId: "lalbagh",
-      endStationId: "mantri-square",
-      stopCount: 2,
+      endStationId: "rajajinagar",
+      terminalStationName: "Madavara",
+      stopCount: 8,
     });
   });
 

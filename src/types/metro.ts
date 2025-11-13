@@ -23,6 +23,7 @@ export interface Line {
   id: string;
   name: string;
   colorHex: string;
+  isOperational: boolean;
   stations: StationRef[];
   terminalStart: string;
   terminalEnd: string;
@@ -93,6 +94,7 @@ export interface LineSummary {
   colorHex: string;
   terminalStart: string;
   terminalEnd: string;
+  isOperational: boolean;
 }
 
 export interface JourneyPlanSummary {

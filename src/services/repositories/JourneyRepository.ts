@@ -6,6 +6,8 @@ import type {
   JourneyResult,
   JourneyPlan,
   LineSummary,
+  Line,
+  Station,
   StationSummary,
 } from "@/types/metro";
 
@@ -22,6 +24,12 @@ export interface JourneyRepositoryDependencies {
 export class JourneyRepositoryImpl implements JourneyRepository {
   protected readonly dataSource: MetroDataSource;
   private planner: RoutePlanner | null = null;
+  private operationalNetwork:
+    | {
+        lines: Line[];
+        stations: Station[];
+      }
+    | null = null;
 
   constructor(dependencies: JourneyRepositoryDependencies) {
     this.dataSource = dependencies.dataSource;
@@ -72,7 +80,7 @@ export class JourneyRepositoryImpl implements JourneyRepository {
   }
 
   async listStations(prefix?: string): Promise<StationSummary[]> {
-    const stations = await this.dataSource.getStations();
+    const { stations } = await this.getOperationalNetwork();
 
     const summaries = stations
       .map((station) => ({
@@ -112,7 +120,7 @@ export class JourneyRepositoryImpl implements JourneyRepository {
   }
 
   async listLines(): Promise<LineSummary[]> {
-    const lines = await this.dataSource.getLines();
+    const { lines } = await this.getOperationalNetwork();
 
     return lines.map((line) => ({
       id: line.id,
@@ -120,16 +128,14 @@ export class JourneyRepositoryImpl implements JourneyRepository {
       colorHex: line.colorHex,
       terminalStart: line.terminalStart,
       terminalEnd: line.terminalEnd,
+      isOperational: line.isOperational,
     }));
   }
 
   protected async ensurePlanner(): Promise<RoutePlanner> {
     if (!this.planner) {
-      const [lines, stations] = await Promise.all([
-        this.dataSource.getLines(),
-        this.dataSource.getStations(),
-      ]);
-      this.planner = new RoutePlanner({ lines, stations });
+      const network = await this.getOperationalNetwork();
+      this.planner = new RoutePlanner(network);
     }
     return this.planner;
   }
@@ -155,4 +161,81 @@ export class JourneyRepositoryImpl implements JourneyRepository {
       segments,
     };
   }
+
+  private async getOperationalNetwork(): Promise<{
+    lines: Line[];
+    stations: Station[];
+  }> {
+    if (this.operationalNetwork) {
+      return this.operationalNetwork;
+    }
+
+    const [lines, stations] = await Promise.all([
+      this.dataSource.getLines(),
+      this.dataSource.getStations(),
+    ]);
+
+    const network = filterOperationalNetwork(lines, stations);
+    this.operationalNetwork = network;
+
+    return network;
+  }
+}
+
+function filterOperationalNetwork(lines: Line[], stations: Station[]): {
+  lines: Line[];
+  stations: Station[];
+} {
+  const operationalLines = lines
+    .filter((line) => line.isOperational !== false)
+    .map((line) => ({
+      ...line,
+      stations: line.stations.map((stationRef) => ({ ...stationRef })),
+    }));
+
+  const operationalLineIds = new Set(operationalLines.map((line) => line.id));
+
+  const stationsWithOperationalLines = stations
+    .map((station) => {
+      const lineIds = station.lines.filter((lineId) =>
+        operationalLineIds.has(lineId),
+      );
+
+      if (lineIds.length === 0) {
+        return null;
+      }
+
+      return {
+        ...station,
+        lines: lineIds,
+        connections: station.connections
+          .filter((connection) => operationalLineIds.has(connection.lineId))
+          .map((connection) => ({ ...connection })),
+      };
+    })
+    .filter((station): station is Station => station !== null);
+
+  const availableStationIds = new Set(
+    stationsWithOperationalLines.map((station) => station.id),
+  );
+
+  const sanitisedStations = stationsWithOperationalLines.map((station) => ({
+    ...station,
+    isInterchange: station.isInterchange && station.lines.length > 1,
+    connections: station.connections.filter((connection) =>
+      availableStationIds.has(connection.stationId),
+    ),
+  }));
+
+  const sanitisedLines = operationalLines.map((line) => ({
+    ...line,
+    stations: line.stations.filter((stationRef) =>
+      availableStationIds.has(stationRef.id),
+    ),
+  }));
+
+  return {
+    lines: sanitisedLines,
+    stations: sanitisedStations,
+  };
 }

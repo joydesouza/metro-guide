@@ -5,6 +5,7 @@
       "id": "purple",
       "name": "Purple Line",
       "colorHex": "#6f2da8",
+      "isOperational": true,
       "terminalStart": "challaghatta",
       "terminalEnd": "whitefield-kadugodi",
       "stations": [
@@ -166,6 +167,7 @@
       "id": "green",
       "name": "Green Line",
       "colorHex": "#2f9e44",
+      "isOperational": true,
       "terminalStart": "madavara",
       "terminalEnd": "silk-institute",
       "stations": [
@@ -303,6 +305,7 @@
       "id": "yellow",
       "name": "Yellow Line",
       "colorHex": "#f4c20d",
+      "isOperational": true,
       "terminalStart": "rashtreeya-vidyalaya-road",
       "terminalEnd": "bommasandra",
       "stations": [
@@ -376,6 +379,7 @@
       "id": "blue",
       "name": "Blue Line",
       "colorHex": "#1971c2",
+      "isOperational": false,
       "terminalStart": "central-silk-board",
       "terminalEnd": "kempegowda-international-airport",
       "stations": [
@@ -505,6 +509,7 @@
       "id": "pink",
       "name": "Pink Line",
       "colorHex": "#e64980",
+      "isOperational": false,
       "terminalStart": "kalena-agrahara",
       "terminalEnd": "nagawara",
       "stations": [
@@ -583,9 +588,7 @@
     {
       "id": "agara-lake",
       "name": "Agara Lake",
-      "lines": [
-        "blue"
-      ],
+      "lines": ["blue"],
       "connections": [
         {
           "lineId": "blue",
@@ -603,9 +606,7 @@
     {
       "id": "airport-city",
       "name": "Airport City",
-      "lines": [
-        "blue"
-      ],
+      "lines": ["blue"],
       "connections": [
         {
           "lineId": "blue",
@@ -623,9 +624,7 @@
     {
       "id": "attiguppe",
       "name": "Attiguppe",
-      "lines": [
-        "purple"
-      ],
+      "lines": ["purple"],
       "connections": [
         {
           "lineId": "purple",
@@ -643,9 +642,7 @@
     {
       "id": "bagalur-cross",
       "name": "Bagalur Cross",
-      "lines": [
-        "blue"
-      ],
+      "lines": ["blue"],
       "connections": [
         {
           "lineId": "blue",
@@ -663,9 +660,7 @@
     {
       "id": "baiyappanahalli",
       "name": "Baiyappanahalli",
-      "lines": [
-        "purple"
-      ],
+      "lines": ["purple"],
       "connections": [
         {
           "lineId": "purple",
@@ -683,9 +678,7 @@
     {
       "id": "banashankari",
       "name": "Banashankari",
-      "lines": [
-        "green"
-      ],
+      "lines": ["green"],
       "connections": [
         {
           "lineId": "green",
@@ -703,9 +696,7 @@
     {
       "id": "bellandur",
       "name": "Bellandur",
-      "lines": [
-        "blue"
-      ],
+      "lines": ["blue"],
       "connections": [
         {
           "lineId": "blue",
@@ -723,9 +714,7 @@
     {
       "id": "benniganahalli",
       "name": "Benniganahalli",
-      "lines": [
-        "purple"
-      ],
+      "lines": ["purple"],
       "connections": [
         {
           "lineId": "purple",
@@ -743,9 +732,7 @@
     {
       "id": "beratena-agrahara",
       "name": "Beratena Agrahara",
-      "lines": [
-        "yellow"
-      ],
+      "lines": ["yellow"],
       "connections": [
         {
           "lineId": "yellow",
@@ -763,9 +750,7 @@
     {
       "id": "bettahalasuru",
       "name": "Bettahalasuru",
-      "lines": [
-        "blue"
-      ],
+      "lines": ["blue"],
       "connections": [
         {
           "lineId": "blue",
@@ -783,9 +768,7 @@
     {
       "id": "bommanahalli",
       "name": "Bommanahalli",
-      "lines": [
-        "yellow"
-      ],
+      "lines": ["yellow"],
       "connections": [
         {
           "lineId": "yellow",
@@ -803,9 +786,7 @@
     {
       "id": "bommasandra",
       "name": "Bommasandra",
-      "lines": [
-        "yellow"
-      ],
+      "lines": ["yellow"],
       "connections": [
         {
           "lineId": "yellow",
@@ -818,9 +799,7 @@
     {
       "id": "btm-layout",
       "name": "BTM Layout",
-      "lines": [
-        "yellow"
-      ],
+      "lines": ["yellow"],
       "connections": [
         {
           "lineId": "yellow",
@@ -838,9 +817,7 @@
     {
       "id": "cantonment",
       "name": "Cantonment",
-      "lines": [
-        "pink"
-      ],
+      "lines": ["pink"],
       "connections": [
         {
           "lineId": "pink",
@@ -858,9 +835,7 @@
     {
       "id": "central-college",
       "name": "Central College",
-      "lines": [
-        "purple"
-      ],
+      "lines": ["purple"],
       "connections": [
         {
           "lineId": "purple",
@@ -878,10 +853,7 @@
     {
       "id": "central-silk-board",
       "name": "Central Silk Board",
-      "lines": [
-        "yellow",
-        "blue"
-      ],
+      "lines": ["yellow", "blue"],
       "connections": [
         {
           "lineId": "blue",
@@ -904,9 +876,7 @@
     {
       "id": "challaghatta",
       "name": "Challaghatta",
-      "lines": [
-        "purple"
-      ],
+      "lines": ["purple"],
       "connections": [
         {
           "lineId": "purple",
@@ -919,9 +889,7 @@
     {
       "id": "channasandra-hopefarm",
       "name": "Channasandra (Hopefarm)",
-      "lines": [
-        "purple"
-      ],
+      "lines": ["purple"],
       "connections": [
         {
           "lineId": "purple",
@@ -939,9 +907,7 @@
     {
       "id": "chickpete",
       "name": "Chickpete",
-      "lines": [
-        "green"
-      ],
+      "lines": ["green"],
       "connections": [
         {
           "lineId": "green",
@@ -959,9 +925,7 @@
     {
       "id": "chikkabidarakallu",
       "name": "Chikkabidarakallu",
-      "lines": [
-        "green"
-      ],
+      "lines": ["green"],
       "connections": [
         {
           "lineId": "green",
@@ -979,9 +943,7 @@
     {
       "id": "cubbon-park",
       "name": "Cubbon Park",
-      "lines": [
-        "purple"
-      ],
+      "lines": ["purple"],
       "connections": [
         {
           "lineId": "purple",
@@ -999,9 +961,7 @@
     {
       "id": "dairy-circle",
       "name": "Dairy Circle",
-      "lines": [
-        "pink"
-      ],
+      "lines": ["pink"],
       "connections": [
         {
           "lineId": "pink",
@@ -1019,9 +979,7 @@
     {
       "id": "dasarahalli",
       "name": "Dasarahalli",
-      "lines": [
-        "green"
-      ],
+      "lines": ["green"],
       "connections": [
         {
           "lineId": "green",
@@ -1039,9 +997,7 @@
     {
       "id": "deepanjali-nagar",
       "name": "Deepanjali Nagar",
-      "lines": [
-        "purple"
-      ],
+      "lines": ["purple"],
       "connections": [
         {
           "lineId": "purple",
@@ -1059,9 +1015,7 @@
     {
       "id": "devarabeesanahalli",
       "name": "Devarabeesanahalli",
-      "lines": [
-        "blue"
-      ],
+      "lines": ["blue"],
       "connections": [
         {
           "lineId": "blue",
@@ -1079,9 +1033,7 @@
     {
       "id": "doddajala",
       "name": "Doddajala",
-      "lines": [
-        "blue"
-      ],
+      "lines": ["blue"],
       "connections": [
         {
           "lineId": "blue",
@@ -1099,9 +1051,7 @@
     {
       "id": "doddakallasandra",
       "name": "Doddakallasandra",
-      "lines": [
-        "green"
-      ],
+      "lines": ["green"],
       "connections": [
         {
           "lineId": "green",
@@ -1119,9 +1069,7 @@
     {
       "id": "doddanekundi",
       "name": "Doddanekundi",
-      "lines": [
-        "blue"
-      ],
+      "lines": ["blue"],
       "connections": [
         {
           "lineId": "blue",
@@ -1139,9 +1087,7 @@
     {
       "id": "drdo-sports-complex",
       "name": "DRDO Sports Complex",
-      "lines": [
-        "blue"
-      ],
+      "lines": ["blue"],
       "connections": [
         {
           "lineId": "blue",
@@ -1159,9 +1105,7 @@
     {
       "id": "electronic-city",
       "name": "Electronic City",
-      "lines": [
-        "yellow"
-      ],
+      "lines": ["yellow"],
       "connections": [
         {
           "lineId": "yellow",
@@ -1179,9 +1123,7 @@
     {
       "id": "garudacharpalya",
       "name": "Garudacharpalya",
-      "lines": [
-        "purple"
-      ],
+      "lines": ["purple"],
       "connections": [
         {
           "lineId": "purple",
@@ -1199,9 +1141,7 @@
     {
       "id": "goraguntepalya",
       "name": "Goraguntepalya",
-      "lines": [
-        "green"
-      ],
+      "lines": ["green"],
       "connections": [
         {
           "lineId": "green",
@@ -1219,9 +1159,7 @@
     {
       "id": "halasuru",
       "name": "Halasuru",
-      "lines": [
-        "purple"
-      ],
+      "lines": ["purple"],
       "connections": [
         {
           "lineId": "purple",
@@ -1239,9 +1177,7 @@
     {
       "id": "hbr-layout",
       "name": "HBR Layout",
-      "lines": [
-        "blue"
-      ],
+      "lines": ["blue"],
       "connections": [
         {
           "lineId": "blue",
@@ -1259,9 +1195,7 @@
     {
       "id": "hebbagodi",
       "name": "Hebbagodi",
-      "lines": [
-        "yellow"
-      ],
+      "lines": ["yellow"],
       "connections": [
         {
           "lineId": "yellow",
@@ -1279,9 +1213,7 @@
     {
       "id": "hebbal",
       "name": "Hebbal",
-      "lines": [
-        "blue"
-      ],
+      "lines": ["blue"],
       "connections": [
         {
           "lineId": "blue",
@@ -1299,9 +1231,7 @@
     {
       "id": "hongasandra",
       "name": "Hongasandra",
-      "lines": [
-        "yellow"
-      ],
+      "lines": ["yellow"],
       "connections": [
         {
           "lineId": "yellow",
@@ -1319,9 +1249,7 @@
     {
       "id": "hoodi",
       "name": "Hoodi",
-      "lines": [
-        "purple"
-      ],
+      "lines": ["purple"],
       "connections": [
         {
           "lineId": "purple",
@@ -1339,9 +1267,7 @@
     {
       "id": "horamavu",
       "name": "Horamavu",
-      "lines": [
-        "blue"
-      ],
+      "lines": ["blue"],
       "connections": [
         {
           "lineId": "blue",
@@ -1359,9 +1285,7 @@
     {
       "id": "hosa-road",
       "name": "Hosa Road",
-      "lines": [
-        "yellow"
-      ],
+      "lines": ["yellow"],
       "connections": [
         {
           "lineId": "yellow",
@@ -1379,9 +1303,7 @@
     {
       "id": "hosahalli",
       "name": "Hosahalli",
-      "lines": [
-        "purple"
-      ],
+      "lines": ["purple"],
       "connections": [
         {
           "lineId": "purple",
@@ -1399,9 +1321,7 @@
     {
       "id": "hrbr-layout",
       "name": "HRBR Layout",
-      "lines": [
-        "blue"
-      ],
+      "lines": ["blue"],
       "connections": [
         {
           "lineId": "blue",
@@ -1419,9 +1339,7 @@
     {
       "id": "hsr-layout",
       "name": "HSR Layout",
-      "lines": [
-        "blue"
-      ],
+      "lines": ["blue"],
       "connections": [
         {
           "lineId": "blue",
@@ -1439,9 +1357,7 @@
     {
       "id": "hulimavu",
       "name": "Hulimavu",
-      "lines": [
-        "pink"
-      ],
+      "lines": ["pink"],
       "connections": [
         {
           "lineId": "pink",
@@ -1459,9 +1375,7 @@
     {
       "id": "huskur-road",
       "name": "Huskur Road",
-      "lines": [
-        "yellow"
-      ],
+      "lines": ["yellow"],
       "connections": [
         {
           "lineId": "yellow",
@@ -1479,9 +1393,7 @@
     {
       "id": "iblur",
       "name": "Iblur",
-      "lines": [
-        "blue"
-      ],
+      "lines": ["blue"],
       "connections": [
         {
           "lineId": "blue",
@@ -1499,9 +1411,7 @@
     {
       "id": "iim-bangalore",
       "name": "IIM Bangalore",
-      "lines": [
-        "pink"
-      ],
+      "lines": ["pink"],
       "connections": [
         {
           "lineId": "pink",
@@ -1519,9 +1429,7 @@
     {
       "id": "indiranagar",
       "name": "Indiranagar",
-      "lines": [
-        "purple"
-      ],
+      "lines": ["purple"],
       "connections": [
         {
           "lineId": "purple",
@@ -1539,9 +1447,7 @@
     {
       "id": "isro-karthik-nagar",
       "name": "ISRO (Karthik Nagar)",
-      "lines": [
-        "blue"
-      ],
+      "lines": ["blue"],
       "connections": [
         {
           "lineId": "blue",
@@ -1559,9 +1465,7 @@
     {
       "id": "jakkur-cross",
       "name": "Jakkur Cross",
-      "lines": [
-        "blue"
-      ],
+      "lines": ["blue"],
       "connections": [
         {
           "lineId": "blue",
@@ -1579,9 +1483,7 @@
     {
       "id": "jalahalli",
       "name": "Jalahalli",
-      "lines": [
-        "green"
-      ],
+      "lines": ["green"],
       "connections": [
         {
           "lineId": "green",
@@ -1599,10 +1501,7 @@
     {
       "id": "jayadeva-hospital",
       "name": "Jayadeva Hospital",
-      "lines": [
-        "yellow",
-        "pink"
-      ],
+      "lines": ["yellow", "pink"],
       "connections": [
         {
           "lineId": "pink",
@@ -1630,9 +1529,7 @@
     {
       "id": "jayanagar",
       "name": "Jayanagar",
-      "lines": [
-        "green"
-      ],
+      "lines": ["green"],
       "connections": [
         {
           "lineId": "green",
@@ -1650,9 +1547,7 @@
     {
       "id": "jayaprakash-nagar",
       "name": "Jayaprakash Nagar",
-      "lines": [
-        "green"
-      ],
+      "lines": ["green"],
       "connections": [
         {
           "lineId": "green",
@@ -1670,9 +1565,7 @@
     {
       "id": "jnanabharathi",
       "name": "Jnanabharathi",
-      "lines": [
-        "purple"
-      ],
+      "lines": ["purple"],
       "connections": [
         {
           "lineId": "purple",
@@ -1690,9 +1583,7 @@
     {
       "id": "jp-nagar-4th-phase",
       "name": "JP Nagar 4th Phase",
-      "lines": [
-        "pink"
-      ],
+      "lines": ["pink"],
       "connections": [
         {
           "lineId": "pink",
@@ -1710,9 +1601,7 @@
     {
       "id": "kadubeesanahalli",
       "name": "Kadubeesanahalli",
-      "lines": [
-        "blue"
-      ],
+      "lines": ["blue"],
       "connections": [
         {
           "lineId": "blue",
@@ -1730,9 +1619,7 @@
     {
       "id": "kadugodi-tree-park",
       "name": "Kadugodi Tree Park",
-      "lines": [
-        "purple"
-      ],
+      "lines": ["purple"],
       "connections": [
         {
           "lineId": "purple",
@@ -1750,9 +1637,7 @@
     {
       "id": "kadugundanahalli",
       "name": "Kadugundanahalli",
-      "lines": [
-        "pink"
-      ],
+      "lines": ["pink"],
       "connections": [
         {
           "lineId": "pink",
@@ -1770,9 +1655,7 @@
     {
       "id": "kalena-agrahara",
       "name": "Kalena Agrahara",
-      "lines": [
-        "pink"
-      ],
+      "lines": ["pink"],
       "connections": [
         {
           "lineId": "pink",
@@ -1785,9 +1668,7 @@
     {
       "id": "kalyan-nagar",
       "name": "Kalyan Nagar",
-      "lines": [
-        "blue"
-      ],
+      "lines": ["blue"],
       "connections": [
         {
           "lineId": "blue",
@@ -1805,9 +1686,7 @@
     {
       "id": "kasturinagar",
       "name": "Kasturinagar",
-      "lines": [
-        "blue"
-      ],
+      "lines": ["blue"],
       "connections": [
         {
           "lineId": "blue",
@@ -1825,9 +1704,7 @@
     {
       "id": "kempapura",
       "name": "Kempapura",
-      "lines": [
-        "blue"
-      ],
+      "lines": ["blue"],
       "connections": [
         {
           "lineId": "blue",
@@ -1845,9 +1722,7 @@
     {
       "id": "kempegowda-international-airport",
       "name": "Kempegowda International Airport",
-      "lines": [
-        "blue"
-      ],
+      "lines": ["blue"],
       "connections": [
         {
           "lineId": "blue",
@@ -1860,10 +1735,7 @@
     {
       "id": "kempegowda-stn-majestic",
       "name": "Kempegowda Stn., Majestic",
-      "lines": [
-        "purple",
-        "green"
-      ],
+      "lines": ["purple", "green"],
       "connections": [
         {
           "lineId": "green",
@@ -1891,9 +1763,7 @@
     {
       "id": "kengeri",
       "name": "Kengeri",
-      "lines": [
-        "purple"
-      ],
+      "lines": ["purple"],
       "connections": [
         {
           "lineId": "purple",
@@ -1911,9 +1781,7 @@
     {
       "id": "kengeri-bus-terminal",
       "name": "Kengeri Bus Terminal",
-      "lines": [
-        "purple"
-      ],
+      "lines": ["purple"],
       "connections": [
         {
           "lineId": "purple",
@@ -1931,9 +1799,7 @@
     {
       "id": "kodigehalli",
       "name": "Kodigehalli",
-      "lines": [
-        "blue"
-      ],
+      "lines": ["blue"],
       "connections": [
         {
           "lineId": "blue",
@@ -1951,9 +1817,7 @@
     {
       "id": "konanakunte-cross",
       "name": "Konanakunte Cross",
-      "lines": [
-        "green"
-      ],
+      "lines": ["green"],
       "connections": [
         {
           "lineId": "green",
@@ -1971,9 +1835,7 @@
     {
       "id": "konnapana-agrahara",
       "name": "Konnapana Agrahara",
-      "lines": [
-        "yellow"
-      ],
+      "lines": ["yellow"],
       "connections": [
         {
           "lineId": "yellow",
@@ -1991,10 +1853,7 @@
     {
       "id": "kr-pura",
       "name": "KR Pura",
-      "lines": [
-        "purple",
-        "blue"
-      ],
+      "lines": ["purple", "blue"],
       "connections": [
         {
           "lineId": "blue",
@@ -2022,9 +1881,7 @@
     {
       "id": "krishna-rajendra-market",
       "name": "Krishna Rajendra Market",
-      "lines": [
-        "green"
-      ],
+      "lines": ["green"],
       "connections": [
         {
           "lineId": "green",
@@ -2042,9 +1899,7 @@
     {
       "id": "ksr-city-railway-stn",
       "name": "KSR City Railway Stn.",
-      "lines": [
-        "purple"
-      ],
+      "lines": ["purple"],
       "connections": [
         {
           "lineId": "purple",
@@ -2062,9 +1917,7 @@
     {
       "id": "kudlu-gate",
       "name": "Kudlu Gate",
-      "lines": [
-        "yellow"
-      ],
+      "lines": ["yellow"],
       "connections": [
         {
           "lineId": "yellow",
@@ -2082,9 +1935,7 @@
     {
       "id": "kundalahalli",
       "name": "Kundalahalli",
-      "lines": [
-        "purple"
-      ],
+      "lines": ["purple"],
       "connections": [
         {
           "lineId": "purple",
@@ -2102,9 +1953,7 @@
     {
       "id": "kuvempu-road",
       "name": "Kuvempu Road",
-      "lines": [
-        "green"
-      ],
+      "lines": ["green"],
       "connections": [
         {
           "lineId": "green",
@@ -2122,9 +1971,7 @@
     {
       "id": "lakkasandra",
       "name": "Lakkasandra",
-      "lines": [
-        "pink"
-      ],
+      "lines": ["pink"],
       "connections": [
         {
           "lineId": "pink",
@@ -2142,9 +1989,7 @@
     {
       "id": "lalbagh",
       "name": "Lalbagh",
-      "lines": [
-        "green"
-      ],
+      "lines": ["green"],
       "connections": [
         {
           "lineId": "green",
@@ -2162,9 +2007,7 @@
     {
       "id": "langford-town",
       "name": "Langford Town",
-      "lines": [
-        "pink"
-      ],
+      "lines": ["pink"],
       "connections": [
         {
           "lineId": "pink",
@@ -2182,9 +2025,7 @@
     {
       "id": "madavara",
       "name": "Madavara",
-      "lines": [
-        "green"
-      ],
+      "lines": ["green"],
       "connections": [
         {
           "lineId": "green",
@@ -2197,9 +2038,7 @@
     {
       "id": "magadi-road",
       "name": "Magadi Road",
-      "lines": [
-        "purple"
-      ],
+      "lines": ["purple"],
       "connections": [
         {
           "lineId": "purple",
@@ -2217,10 +2056,7 @@
     {
       "id": "mahadevapura",
       "name": "Mahadevapura",
-      "lines": [
-        "purple",
-        "blue"
-      ],
+      "lines": ["purple", "blue"],
       "connections": [
         {
           "lineId": "blue",
@@ -2248,9 +2084,7 @@
     {
       "id": "mahalakshmi",
       "name": "Mahalakshmi",
-      "lines": [
-        "green"
-      ],
+      "lines": ["green"],
       "connections": [
         {
           "lineId": "green",
@@ -2268,9 +2102,7 @@
     {
       "id": "mahatma-gandhi-road",
       "name": "Mahatma Gandhi Road",
-      "lines": [
-        "purple"
-      ],
+      "lines": ["purple"],
       "connections": [
         {
           "lineId": "purple",
@@ -2288,9 +2120,7 @@
     {
       "id": "manjunathanagar",
       "name": "Manjunathanagar",
-      "lines": [
-        "green"
-      ],
+      "lines": ["green"],
       "connections": [
         {
           "lineId": "green",
@@ -2308,9 +2138,7 @@
     {
       "id": "marathahalli",
       "name": "Marathahalli",
-      "lines": [
-        "blue"
-      ],
+      "lines": ["blue"],
       "connections": [
         {
           "lineId": "blue",
@@ -2328,9 +2156,7 @@
     {
       "id": "mysuru-road",
       "name": "Mysuru Road",
-      "lines": [
-        "purple"
-      ],
+      "lines": ["purple"],
       "connections": [
         {
           "lineId": "purple",
@@ -2348,9 +2174,7 @@
     {
       "id": "nagasandra",
       "name": "Nagasandra",
-      "lines": [
-        "green"
-      ],
+      "lines": ["green"],
       "connections": [
         {
           "lineId": "green",
@@ -2368,10 +2192,7 @@
     {
       "id": "nagawara",
       "name": "Nagawara",
-      "lines": [
-        "blue",
-        "pink"
-      ],
+      "lines": ["blue", "pink"],
       "connections": [
         {
           "lineId": "blue",
@@ -2394,9 +2215,7 @@
     {
       "id": "nallurhalli",
       "name": "Nallurhalli",
-      "lines": [
-        "purple"
-      ],
+      "lines": ["purple"],
       "connections": [
         {
           "lineId": "purple",
@@ -2414,9 +2233,7 @@
     {
       "id": "national-college",
       "name": "National College",
-      "lines": [
-        "green"
-      ],
+      "lines": ["green"],
       "connections": [
         {
           "lineId": "green",
@@ -2434,9 +2251,7 @@
     {
       "id": "nayandahalli",
       "name": "Nayandahalli",
-      "lines": [
-        "purple"
-      ],
+      "lines": ["purple"],
       "connections": [
         {
           "lineId": "purple",
@@ -2454,9 +2269,7 @@
     {
       "id": "pattanagere",
       "name": "Pattanagere",
-      "lines": [
-        "purple"
-      ],
+      "lines": ["purple"],
       "connections": [
         {
           "lineId": "purple",
@@ -2474,9 +2287,7 @@
     {
       "id": "pattandur-agrahara",
       "name": "Pattandur Agrahara",
-      "lines": [
-        "purple"
-      ],
+      "lines": ["purple"],
       "connections": [
         {
           "lineId": "purple",
@@ -2494,9 +2305,7 @@
     {
       "id": "peenya",
       "name": "Peenya",
-      "lines": [
-        "green"
-      ],
+      "lines": ["green"],
       "connections": [
         {
           "lineId": "green",
@@ -2514,9 +2323,7 @@
     {
       "id": "peenya-industry",
       "name": "Peenya Industry",
-      "lines": [
-        "green"
-      ],
+      "lines": ["green"],
       "connections": [
         {
           "lineId": "green",
@@ -2534,9 +2341,7 @@
     {
       "id": "pottery-town",
       "name": "Pottery Town",
-      "lines": [
-        "pink"
-      ],
+      "lines": ["pink"],
       "connections": [
         {
           "lineId": "pink",
@@ -2554,9 +2359,7 @@
     {
       "id": "ragigudda",
       "name": "Ragigudda",
-      "lines": [
-        "yellow"
-      ],
+      "lines": ["yellow"],
       "connections": [
         {
           "lineId": "yellow",
@@ -2574,9 +2377,7 @@
     {
       "id": "rajajinagar",
       "name": "Rajajinagar",
-      "lines": [
-        "green"
-      ],
+      "lines": ["green"],
       "connections": [
         {
           "lineId": "green",
@@ -2594,9 +2395,7 @@
     {
       "id": "rajarajeshwari-nagar",
       "name": "Rajarajeshwari Nagar",
-      "lines": [
-        "purple"
-      ],
+      "lines": ["purple"],
       "connections": [
         {
           "lineId": "purple",
@@ -2614,10 +2413,7 @@
     {
       "id": "rashtreeya-vidyalaya-road",
       "name": "Rashtreeya Vidyalaya Road",
-      "lines": [
-        "green",
-        "yellow"
-      ],
+      "lines": ["green", "yellow"],
       "connections": [
         {
           "lineId": "green",
@@ -2640,9 +2436,7 @@
     {
       "id": "rashtriya-military-school",
       "name": "Rashtriya Military School",
-      "lines": [
-        "pink"
-      ],
+      "lines": ["pink"],
       "connections": [
         {
           "lineId": "pink",
@@ -2660,9 +2454,7 @@
     {
       "id": "sampige-road",
       "name": "Sampige Road",
-      "lines": [
-        "green"
-      ],
+      "lines": ["green"],
       "connections": [
         {
           "lineId": "green",
@@ -2680,9 +2472,7 @@
     {
       "id": "sandal-soap-factory",
       "name": "Sandal Soap Factory",
-      "lines": [
-        "green"
-      ],
+      "lines": ["green"],
       "connections": [
         {
           "lineId": "green",
@@ -2700,9 +2490,7 @@
     {
       "id": "seetharam-palya",
       "name": "Seetharam Palya",
-      "lines": [
-        "purple"
-      ],
+      "lines": ["purple"],
       "connections": [
         {
           "lineId": "purple",
@@ -2720,9 +2508,7 @@
     {
       "id": "shivajinagar",
       "name": "Shivajinagar",
-      "lines": [
-        "pink"
-      ],
+      "lines": ["pink"],
       "connections": [
         {
           "lineId": "pink",
@@ -2740,9 +2526,7 @@
     {
       "id": "silk-institute",
       "name": "Silk Institute",
-      "lines": [
-        "green"
-      ],
+      "lines": ["green"],
       "connections": [
         {
           "lineId": "green",
@@ -2755,9 +2539,7 @@
     {
       "id": "singasandra",
       "name": "Singasandra",
-      "lines": [
-        "yellow"
-      ],
+      "lines": ["yellow"],
       "connections": [
         {
           "lineId": "yellow",
@@ -2775,9 +2557,7 @@
     {
       "id": "singayyanapalya",
       "name": "Singayyanapalya",
-      "lines": [
-        "purple"
-      ],
+      "lines": ["purple"],
       "connections": [
         {
           "lineId": "purple",
@@ -2795,9 +2575,7 @@
     {
       "id": "south-end-circle",
       "name": "South End Circle",
-      "lines": [
-        "green"
-      ],
+      "lines": ["green"],
       "connections": [
         {
           "lineId": "green",
@@ -2815,9 +2593,7 @@
     {
       "id": "sri-sathya-sai-hospital",
       "name": "Sri Sathya Sai Hospital",
-      "lines": [
-        "purple"
-      ],
+      "lines": ["purple"],
       "connections": [
         {
           "lineId": "purple",
@@ -2835,9 +2611,7 @@
     {
       "id": "srirampura",
       "name": "Srirampura",
-      "lines": [
-        "green"
-      ],
+      "lines": ["green"],
       "connections": [
         {
           "lineId": "green",
@@ -2855,9 +2629,7 @@
     {
       "id": "swami-vivekananda-road",
       "name": "Swami Vivekananda Road",
-      "lines": [
-        "purple"
-      ],
+      "lines": ["purple"],
       "connections": [
         {
           "lineId": "purple",
@@ -2875,9 +2647,7 @@
     {
       "id": "tannery-road",
       "name": "Tannery Road",
-      "lines": [
-        "pink"
-      ],
+      "lines": ["pink"],
       "connections": [
         {
           "lineId": "pink",
@@ -2895,9 +2665,7 @@
     {
       "id": "tavarekere",
       "name": "Tavarekere",
-      "lines": [
-        "pink"
-      ],
+      "lines": ["pink"],
       "connections": [
         {
           "lineId": "pink",
@@ -2915,9 +2683,7 @@
     {
       "id": "thalaghattapura",
       "name": "Thalaghattapura",
-      "lines": [
-        "green"
-      ],
+      "lines": ["green"],
       "connections": [
         {
           "lineId": "green",
@@ -2935,9 +2701,7 @@
     {
       "id": "trinity",
       "name": "Trinity",
-      "lines": [
-        "purple"
-      ],
+      "lines": ["purple"],
       "connections": [
         {
           "lineId": "purple",
@@ -2955,9 +2719,7 @@
     {
       "id": "vajarahalli",
       "name": "Vajarahalli",
-      "lines": [
-        "green"
-      ],
+      "lines": ["green"],
       "connections": [
         {
           "lineId": "green",
@@ -2975,9 +2737,7 @@
     {
       "id": "veerannapalya",
       "name": "Veerannapalya",
-      "lines": [
-        "blue"
-      ],
+      "lines": ["blue"],
       "connections": [
         {
           "lineId": "blue",
@@ -2995,9 +2755,7 @@
     {
       "id": "venkateshpura",
       "name": "Venkateshpura",
-      "lines": [
-        "pink"
-      ],
+      "lines": ["pink"],
       "connections": [
         {
           "lineId": "pink",
@@ -3015,9 +2773,7 @@
     {
       "id": "vidhana-soudha",
       "name": "Vidhana Soudha",
-      "lines": [
-        "purple"
-      ],
+      "lines": ["purple"],
       "connections": [
         {
           "lineId": "purple",
@@ -3035,9 +2791,7 @@
     {
       "id": "vijayanagar",
       "name": "Vijayanagar",
-      "lines": [
-        "purple"
-      ],
+      "lines": ["purple"],
       "connections": [
         {
           "lineId": "purple",
@@ -3055,9 +2809,7 @@
     {
       "id": "whitefield-kadugodi",
       "name": "Whitefield (Kadugodi)",
-      "lines": [
-        "purple"
-      ],
+      "lines": ["purple"],
       "connections": [
         {
           "lineId": "purple",
@@ -3070,9 +2822,7 @@
     {
       "id": "yelachenahalli",
       "name": "Yelachenahalli",
-      "lines": [
-        "green"
-      ],
+      "lines": ["green"],
       "connections": [
         {
           "lineId": "green",
@@ -3090,9 +2840,7 @@
     {
       "id": "yelahanka",
       "name": "Yelahanka",
-      "lines": [
-        "blue"
-      ],
+      "lines": ["blue"],
       "connections": [
         {
           "lineId": "blue",
@@ -3110,9 +2858,7 @@
     {
       "id": "yeshwantpur",
       "name": "Yeshwantpur",
-      "lines": [
-        "green"
-      ],
+      "lines": ["green"],
       "connections": [
         {
           "lineId": "green",

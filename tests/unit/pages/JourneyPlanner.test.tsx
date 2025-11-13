@@ -41,11 +41,11 @@ describe("JourneyPlanner Page", () => {
     await act(async () => {
       await user.type(fromInput, "Central");
     });
-    await screen.findByRole("option", {
+    const fromOption = await screen.findByRole("option", {
       name: /central silk board/i,
     });
     await act(async () => {
-      await user.keyboard("{ArrowDown}{Enter}");
+      await user.click(fromOption);
     });
     await waitFor(() => expect(fromInput).toHaveValue("Central Silk Board"));
 
@@ -55,11 +55,11 @@ describe("JourneyPlanner Page", () => {
     await act(async () => {
       await user.type(toInput, "Sandal");
     });
-    await screen.findByRole("option", {
+    const toOption = await screen.findByRole("option", {
       name: /sandal soap factory/i,
     });
     await act(async () => {
-      await user.keyboard("{ArrowDown}{Enter}");
+      await user.click(toOption);
     });
     await waitFor(() => expect(toInput).toHaveValue("Sandal Soap Factory"));
 
@@ -76,7 +76,9 @@ describe("JourneyPlanner Page", () => {
       screen.getByRole("heading", { level: 3, name: /step 1: yellow line/i }),
     ).toBeInTheDocument();
     const interchangeItem = screen.getByRole("note");
-    expect(interchangeItem).toHaveTextContent(/interchange at rv road/i);
+    expect(interchangeItem).toHaveTextContent(
+      /interchange at rashtreeya vidyalaya road/i,
+    );
     expect(
       screen.getByRole("heading", { level: 3, name: /step 2: green line/i }),
     ).toBeInTheDocument();
