@@ -1,0 +1,82 @@
+.about-button {
+  position: fixed;
+  top: var(--spacing-16);
+  right: var(--spacing-16);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-8);
+  padding: var(--spacing-8) var(--spacing-12);
+  border: none;
+  border-radius: 9999px;
+  background-color: #ffffff;
+  color: #1a1c1e;
+  font-size: 0.875rem;
+  font-weight: 600;
+  font-family: var(--font-family-bold);
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.12),
+    0 1px 3px rgba(15, 23, 42, 0.08);
+  transition: all 0.2s ease-in-out;
+  z-index: 100;
+  max-width: 40px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.about-button:hover {
+  max-width: 200px;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.16),
+    0 2px 6px rgba(15, 23, 42, 0.12);
+  transform: translateY(-1px);
+}
+
+.about-button:active {
+  transform: translateY(0);
+}
+
+.about-button__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.about-button__text {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out 0.1s;
+}
+
+.about-button:hover .about-button__text {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .about-button {
+    top: var(--spacing-12);
+    right: var(--spacing-12);
+    padding: var(--spacing-6) var(--spacing-10);
+    max-width: 36px;
+  }
+
+  .about-button:hover {
+    max-width: 36px;
+  }
+
+  .about-button:hover .about-button__text {
+    opacity: 0;
+  }
+
+  .about-button__icon {
+    width: 20px;
+    height: 20px;
+    font-size: 0.875rem;
+  }
+}
+
