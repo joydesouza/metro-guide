@@ -16,7 +16,7 @@ export function JourneySteps({
   stations,
 }: JourneyStepsProps): JSX.Element {
   const stationLookup = new Map(
-    stations.map((station) => [station.id, station.name]),
+    stations.map((station) => [station.id, station.name])
   );
   const destinationSegment = plan.segments[plan.segments.length - 1];
   const destinationName =
@@ -39,9 +39,9 @@ export function JourneySteps({
             stationLookup.get(segment.endStationId) ?? segment.endStationId;
           const interchange = segment.interchangeAfter;
           const interchangeStyle: CSSProperties | undefined = interchange
-            ? {
+            ? ({
                 [INTERCHANGE_COLOR_VAR]: interchange.toLineColorHex,
-              }
+              } as CSSProperties)
             : undefined;
 
           return (
