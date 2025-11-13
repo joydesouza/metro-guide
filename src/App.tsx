@@ -1,4 +1,5 @@
 import { JourneyPlannerPage } from "@/pages/JourneyPlanner";
+import "./App.css";
 
 export function App(): JSX.Element {
   return (
