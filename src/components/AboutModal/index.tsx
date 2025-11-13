@@ -49,11 +49,17 @@ export function AboutModal({ isOpen, onClose }: AboutModalProps): JSX.Element {
           <div className="about-modal__content">
             <h2 className="about-modal__title">Why I Built This</h2>
             <p className="about-modal__text">
-              Bangalore Metro keeps getting bigger and more confusing with every
-              new line they add! Figuring out where to change trains and which
-              direction to go started feeling like a puzzle I didn’t sign up
-              for. So, I built this little helper to make navigating the metro
-              way easier (and save myself a few headaches along the way).
+              Maga this Bangalore Metro keeps getting bigger and more confusing
+              with every new line they add. Half the time I’m standing on the
+              platform thinking, “Ayyo, which side now da?!” and figuring out
+              interchanges feels like walking through KR Market on a Sunday
+              morning with zero clue where anything is. All I wanted was a
+              simple ride, not a full brain workout before my morning kesari
+              bath. After one too many wrong platforms and unnecessary train
+              rides, I finally gave up and built this little helper. Now the
+              whole metro journey is easy peasy, no more guessing, no more
+              running around like a headless chicken, just smooth, swalpa
+              tension free travel.
             </p>
           </div>
         </div>
