@@ -8,10 +8,10 @@ export function App(): JSX.Element {
       <AboutButton />
       <div className="app-container">
         <header className="app-header">
-          <h1>Bangalore Metro Journey Planner</h1>
+          <h1>Bengaluru Metro Guide</h1>
           <p className="tagline">
-            Select a starting station and destination to plan your journey
-            through Bengaluru Metro.
+            Hey there, traveler! Choose your starting station and destination,
+            and I’ll show you the easiest way to zip across the Bengaluru Metro.
           </p>
         </header>
         <main>
