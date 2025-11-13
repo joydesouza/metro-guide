@@ -14,6 +14,7 @@
 .journey-form__legend {
   font-size: 1.125rem;
   font-weight: 600;
+  font-family: var(--font-family-bold);
   margin-bottom: var(--spacing-8);
 }
 
@@ -22,6 +23,7 @@
   flex-direction: column;
   gap: var(--spacing-8);
   font-weight: 600;
+  font-family: var(--font-family-bold);
 }
 
 .journey-form__combobox {
@@ -99,6 +101,7 @@
   color: #0f766e;
   font-size: 0.75rem;
   font-weight: 600;
+  font-family: var(--font-family-bold);
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
@@ -111,6 +114,7 @@
   background: linear-gradient(135deg, #2563eb, #1d4ed8);
   color: #ffffff;
   font-weight: 600;
+  font-family: var(--font-family-bold);
   font-size: 1rem;
   cursor: pointer;
   transition:

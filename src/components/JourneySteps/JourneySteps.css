@@ -8,6 +8,7 @@
   flex-direction: column;
   gap: var(--spacing-8);
   margin-bottom: var(--spacing-16);
+  margin-top: var(--spacing-16);
 }
 
 .journey-steps__header h2 {
@@ -41,11 +42,9 @@
   padding: var(--spacing-12) var(--spacing-16);
   border-radius: var(--spacing-16);
   border-left: var(--spacing-4) solid var(--journey-steps-line-color);
-  background: linear-gradient(
-    135deg,
-    rgba(28, 126, 214, 0.12),
-    rgba(28, 126, 214, 0.05)
-  );
+  background: linear-gradient(135deg,
+      rgba(28, 126, 214, 0.12),
+      rgba(28, 126, 214, 0.05));
   color: #1a1c1e;
   display: flex;
   flex-direction: column;
@@ -62,6 +61,7 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   font-weight: 600;
+  font-family: var(--font-family-bold);
   color: var(--journey-steps-line-color);
 }
 
@@ -80,6 +80,7 @@
   background-color: var(--journey-steps-line-color);
   color: #ffffff;
   font-weight: 600;
+  font-family: var(--font-family-bold);
 }
 
 .journey-steps__interchange-direction {

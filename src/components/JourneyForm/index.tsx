@@ -119,8 +119,6 @@ export function JourneyForm({
       aria-busy={isPlanningJourney}
     >
       <fieldset disabled={isLoadingStations} className="journey-form__fieldset">
-        <legend className="journey-form__legend">Plan your journey</legend>
-
         <label htmlFor="from-station" className="journey-form__label">
           From station
           <div className="journey-form__combobox">
@@ -334,7 +332,7 @@ function handleComboboxKeyDown(
   controller: Pick<
     StationSearchController,
     "highlightNext" | "highlightPrevious" | "selectHighlighted" | "close"
-  >,
+  >
 ): void {
   if (event.key === "ArrowDown") {
     event.preventDefault();
