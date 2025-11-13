@@ -5,6 +5,7 @@ import {
   JourneyRepositoryImpl,
   type JourneyRepository,
 } from "@/services/repositories/JourneyRepository";
+
 import type { Direction, Line, Station } from "@/types/metro";
 
 const forward: Direction = "forward";
