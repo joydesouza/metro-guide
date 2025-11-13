@@ -24,12 +24,10 @@ export interface JourneyRepositoryDependencies {
 export class JourneyRepositoryImpl implements JourneyRepository {
   protected readonly dataSource: MetroDataSource;
   private planner: RoutePlanner | null = null;
-  private operationalNetwork:
-    | {
-        lines: Line[];
-        stations: Station[];
-      }
-    | null = null;
+  private operationalNetwork: {
+    lines: Line[];
+    stations: Station[];
+  } | null = null;
 
   constructor(dependencies: JourneyRepositoryDependencies) {
     this.dataSource = dependencies.dataSource;
@@ -182,7 +180,10 @@ export class JourneyRepositoryImpl implements JourneyRepository {
   }
 }
 
-function filterOperationalNetwork(lines: Line[], stations: Station[]): {
+function filterOperationalNetwork(
+  lines: Line[],
+  stations: Station[],
+): {
   lines: Line[];
   stations: Station[];
 } {

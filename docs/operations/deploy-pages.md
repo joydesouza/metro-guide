@@ -43,10 +43,12 @@ This runbook provides operational procedures for managing the automated GitHub P
 #### 1. Quality Gate Failures
 
 **Symptoms**:
+
 - Workflow fails at `Lint`, `Format check`, `Type check`, or `Test with coverage` steps
 - Error messages in workflow logs
 
 **Recovery Steps**:
+
 1. Review failed step logs in workflow run
 2. Fix issues locally:
    ```bash
@@ -59,6 +61,7 @@ This runbook provides operational procedures for managing the automated GitHub P
 4. Or use manual dispatch to retry after fixes
 
 **Prevention**: Run quality checks locally before pushing:
+
 ```bash
 npm run lint && npm run format && npm run typecheck && npm run test
 ```
@@ -66,10 +69,12 @@ npm run lint && npm run format && npm run typecheck && npm run test
 #### 2. Build Failures
 
 **Symptoms**:
+
 - Workflow fails at `Build` step
 - TypeScript compilation errors or Vite build errors
 
 **Recovery Steps**:
+
 1. Check build logs for specific error messages
 2. Reproduce locally: `npm run build`
 3. Fix build issues (missing dependencies, type errors, configuration problems)
@@ -79,10 +84,12 @@ npm run lint && npm run format && npm run typecheck && npm run test
 #### 3. Deployment Failures
 
 **Symptoms**:
+
 - Workflow fails at `Deploy to GitHub Pages` step
 - GitHub Pages environment errors
 
 **Recovery Steps**:
+
 1. Verify repository has GitHub Pages enabled:
    - `Settings → Pages → Build and deployment → GitHub Actions`
 2. Check workflow permissions:
@@ -94,10 +101,12 @@ npm run lint && npm run format && npm run typecheck && npm run test
 #### 4. Dependency Installation Failures
 
 **Symptoms**:
+
 - Workflow fails at `Install dependencies` step
 - `npm ci` errors (lockfile mismatches, network issues)
 
 **Recovery Steps**:
+
 1. Verify `package-lock.json` is committed and up-to-date
 2. Check for network/registry issues (temporary GitHub Actions issues)
 3. If lockfile is corrupted:
@@ -173,6 +182,7 @@ npm run lint && npm run format && npm run typecheck && npm run test
 ### Workflow Not Triggering
 
 **Check**:
+
 1. Verify workflow file is in `.github/workflows/deploy-pages.yml`
 2. Confirm branch is `main` (or adjust workflow trigger)
 3. Check repository Actions are enabled: `Settings → Actions → General`
@@ -180,6 +190,7 @@ npm run lint && npm run format && npm run typecheck && npm run test
 ### Site Not Updating
 
 **Check**:
+
 1. Verify deployment completed successfully (green checkmark)
 2. Wait up to 10 minutes for GitHub Pages propagation
 3. Clear browser cache or use incognito mode
@@ -188,6 +199,7 @@ npm run lint && npm run format && npm run typecheck && npm run test
 ### Concurrent Deployment Issues
 
 **Note**: Workflow includes concurrency guard (`cancel-in-progress: true`) to prevent overlapping deployments. If issues occur:
+
 1. Check concurrency group configuration in workflow
 2. Verify only one deployment runs at a time
 3. Review workflow logs for cancellation messages
@@ -209,6 +221,7 @@ npm run lint && npm run format && npm run typecheck && npm run test
 ### Workflow Updates
 
 When updating the deployment workflow:
+
 1. Test changes in a feature branch first
 2. Verify workflow syntax: `Actions → [Workflow] → [Run] → View workflow file`
 3. Test manual dispatch before merging to `main`
