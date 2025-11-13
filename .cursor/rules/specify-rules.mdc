@@ -3,6 +3,8 @@
 Auto-generated from all feature plans. Last updated: 2025-11-13
 
 ## Active Technologies
+- TypeScript 5.4.x, React 18 (Node ≥18.17, Vite 5 toolchain) + `actions/checkout@v4`, `actions/setup-node@v4`, `actions/upload-pages-artifact@v3`, `actions/deploy-pages@v4`, GitHub Pages infrastructure (001-deploy-gh-pages)
+- N/A (static build artifacts published to GitHub Pages) (001-deploy-gh-pages)
 
 - TypeScript 5.x, ECMAScript 2023 targeting modern evergreen browsers + React 18, React Router (if needed), Vite, PostCSS + Autoprefixer, React Testing Library, Vitest (001-metro-journey-planner)
 
@@ -22,6 +24,7 @@ npm test && npm run lint
 TypeScript 5.x, ECMAScript 2023 targeting modern evergreen browsers: Follow standard conventions
 
 ## Recent Changes
+- 001-deploy-gh-pages: Added TypeScript 5.4.x, React 18 (Node ≥18.17, Vite 5 toolchain) + `actions/checkout@v4`, `actions/setup-node@v4`, `actions/upload-pages-artifact@v3`, `actions/deploy-pages@v4`, GitHub Pages infrastructure
 
 - 001-metro-journey-planner: Added TypeScript 5.x, ECMAScript 2023 targeting modern evergreen browsers + React 18, React Router (if needed), Vite, PostCSS + Autoprefixer, React Testing Library, Vitest
 
