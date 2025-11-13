@@ -31,7 +31,15 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- Gates derived from the repository Constitution (must all pass):
+  - Frontend-only codebase (no server code; all data local or mocked)
+  - API-ready data boundary (repositories + swappable data sources)
+  - React + TypeScript, strict mode, PascalCase components
+  - Minimal dependencies (justify any additional runtime libs)
+  - Unit tests for all UI components and major utilities
+  - Coverage ≥ 90% for components and utilities
+  - ESLint clean, Prettier formatted, type-check passes
+  - Mobile-first, responsive, accessible (WCAG AA) design
 
 ## Project Structure
 
@@ -98,7 +106,7 @@ directories captured above]
 
 > **Fill ONLY if Constitution Check has violations that must be justified**
 
-| Violation | Why Needed | Simpler Alternative Rejected Because |
-|-----------|------------|-------------------------------------|
-| [e.g., 4th project] | [current need] | [why 3 projects insufficient] |
-| [e.g., Repository pattern] | [specific problem] | [why direct DB access insufficient] |
+| Violation                  | Why Needed         | Simpler Alternative Rejected Because |
+| -------------------------- | ------------------ | ------------------------------------ |
+| [e.g., 4th project]        | [current need]     | [why 3 projects insufficient]        |
+| [e.g., Repository pattern] | [specific problem] | [why direct DB access insufficient]  |
