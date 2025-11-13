@@ -84,7 +84,7 @@ jobs:
             
             **Commit**: \`${{ github.sha }}\`
             **Branch**: \`${{ github.ref_name }}\`
-            **Triggered by**: ${{ github.event_name === 'workflow_dispatch' ? 'Manual dispatch' : 'Push to main' }}
+            **Triggered by**: ${{ github.event_name == 'workflow_dispatch' && 'Manual dispatch' || 'Push to main' }}
             
             ### Links
             - 📋 [View workflow run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
@@ -106,7 +106,7 @@ jobs:
             
             **Commit**: \`${{ github.sha }}\`
             **Branch**: \`${{ github.ref_name }}\`
-            **Triggered by**: ${{ github.event_name === 'workflow_dispatch' ? 'Manual dispatch' : 'Push to main' }}
+            **Triggered by**: ${{ github.event_name == 'workflow_dispatch' && 'Manual dispatch' || 'Push to main' }}
             
             ### Diagnostics
             - 🔍 [View failed workflow run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
