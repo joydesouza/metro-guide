@@ -48,7 +48,10 @@ export function JourneySteps({
             <Fragment
               key={`${segment.lineId}-${segment.startStationId}-${segment.endStationId}`}
             >
-              <li className="journey-steps__segment">
+              <li
+                className="journey-steps__segment"
+                style={{ borderColor: segment.colorHex }}
+              >
                 <h3 className="journey-steps__segment-title">
                   <span
                     className="journey-steps__line-indicator"
