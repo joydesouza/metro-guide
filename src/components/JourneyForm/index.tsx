@@ -141,7 +141,9 @@ export function JourneyForm({
                 })
               }
               placeholder={
-                isLoadingStations ? "Loading stations…" : "Search for a station"
+                isLoadingStations
+                  ? "Loading stations…"
+                  : "Search for a station, Eg: Whitefield"
               }
               aria-label="From station"
               aria-autocomplete="list"
@@ -236,7 +238,9 @@ export function JourneyForm({
                 })
               }
               placeholder={
-                isLoadingStations ? "Loading stations…" : "Search for a station"
+                isLoadingStations
+                  ? "Loading stations…"
+                  : "Search for a station, Eg: Electronic City"
               }
               aria-label="To station"
               aria-autocomplete="list"
